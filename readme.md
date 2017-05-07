@@ -1,4 +1,4 @@
-#A fake chat
+# A fake chat
 
 A chat with auto published quotes by:
 - Isaac Asimov
