@@ -29,11 +29,11 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('dev/js/**/*.js')
+  return gulp.src('dev/javascript/**/*.js')
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('dev/js'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 

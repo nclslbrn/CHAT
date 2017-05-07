@@ -1,4 +1,4 @@
 
 *.DS_Store
-nodes_modules/**
-.sass-cache/**
+nodes_modules
+.sass-cache
