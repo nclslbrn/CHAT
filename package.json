@@ -22,7 +22,8 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.11",
-    "gulp-zip": "^4.0.0"
+    "gulp-zip": "^4.0.0",
+    "plumber-sass": "^0.7.7"
   },
   "scripts": {
     "test": "gulp watch"

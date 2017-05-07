@@ -1,17 +1,56 @@
-$(document).ready(function(e) {
+/**
+ * Put quote into the DOM
+ */
 
+function add_quote(i, item, length) {
+  var text_size = '';
 
-  $.getJSON('json/nt_quotes.json', function(nt_quotes) {
+  if( length < 100 ) {
 
+    text_size = 'large';
 
-    $.each(nt_quotes, function(i, item) {
+  }
+  if( length < 200 && length > 100 ) {
 
-      var delay = item.length * 800;
-      setTimeout(function() {
+    text_size = 'regular';
 
-        $('<p>' + item + '</p>').appendTo("#auto-scroll").hide().slideDown();
+  }
+  if( length < 300 && length > 200 ) {
 
-      }, delay);
+    text_size = 'small';
+  }
+  $('<span id=\'quote-'+ i +'\' class=\''+ text_size +'\'>' + item + '</span>').appendTo("#auto-scroll").hide().slideDown();
+
+}
+/**
+ * Wait function
+ */
+(function($) {
+
+  $.wait = function(duration, completeCallback, target) {
+    $target = $(target || '<queue />');
+    return $target.delay(duration).queue(function(next){completeCallback.call($target); next();});
+  }
+
+  $.fn.wait = function(duration, completeCallback) {
+    return $.wait.call(this, duration, completeCallback, this);
+  };
+
+})(jQuery);
+
+/**
+ * Read json data
+ */
+$.getJSON( "json/nt_quotes.json", function( nt_quotes ) {
+
+  $.each(nt_quotes, function(i, item) {
+
+    var length = item.length;
+    var delay = length * 800;
+
+    $.wait(delay, function() {
+
+      add_quote(i, item, length );
 
     });
 

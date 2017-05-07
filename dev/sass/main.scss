@@ -1,0 +1,72 @@
+@import "../../node_modules/plumber-sass/plumber";
+
+$bg-color: #fefefe;
+$font-color: #333;
+$border-color: #efefef;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: $bg-color;
+  color: $font-color;
+  font-family: sans-serif;
+}
+
+.viewport {
+  position: relative;
+  display: block;
+  width: 86vw;
+  height: 90vh;
+  margin: 5vh 7vw;
+}
+
+#auto-scroll {
+  position: absolute;
+  bottom: 0;
+}
+
+#auto-scroll span {
+  display: block;
+  position: relative;
+  padding: .6em 1em;
+  max-width: 100%;
+  font-family: 'Slabo 27px', serif;
+  padding-bottom: .5em;
+  border: 1px solid $border-color;
+  border-left: .5em solid $border-color;
+  overflow: hidden;
+
+  &.large {
+    @include plumber(
+  		$grid-height: 1rem,
+  		$baseline: 0.185185,
+  		$font-size: 3.5,
+  		$line-height: 3,
+  		$leading-top: 2,
+  		$leading-bottom: 3
+  	);
+  }
+  &.regular {
+    @include plumber(
+  		$grid-height: 1rem,
+  		$baseline: 0.185185,
+  		$font-size: 2,
+  		$line-height: 3,
+  		$leading-top: 1,
+  		$leading-bottom: 2
+  	);
+  }
+  &.small {
+    @include plumber(
+  		$grid-height: 1rem,
+  		$baseline: 0.185185,
+  		$font-size: 1.5,
+  		$line-height: 3,
+  		$leading-top: 3,
+  		$leading-bottom: 2
+  	);
+  }
+}

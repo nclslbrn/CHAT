@@ -1,8 +1,10 @@
 body {
-  background-color: #000;
-  color: #fefefe;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefefe;
+  color: #333;
   font-family: sans-serif;
-  font-size: 3em;
 }
 
 .viewport {
@@ -18,9 +20,38 @@ body {
   bottom: 0;
 }
 
-#auto-scroll p {
+#auto-scroll span {
+  display: block;
+  position: relative;
   padding: .6em 1em;
-  width: auto;
-  border-left: .5em solid #111;
+  max-width: 100%;
+  font-family: 'Slabo 27px', serif;
+  padding-bottom: .5em;
+  border: 1px solid #efefef;
+  border-left: 0.5em solid #efefef;
   overflow: hidden;
+}
+#auto-scroll span.large {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+  padding-top: 0.39815rem;
+  padding-bottom: 0.60185rem;
+  margin-bottom: 2rem;
+}
+#auto-scroll span.regular {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 0rem;
+  padding-top: 0.87037rem;
+  padding-bottom: 0.12963rem;
+  margin-bottom: 2rem;
+}
+#auto-scroll span.small {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  padding-top: 0.02778rem;
+  padding-bottom: 0.97222rem;
+  margin-bottom: 1rem;
 }

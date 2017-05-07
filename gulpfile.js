@@ -49,7 +49,8 @@ gulp.task('sync', function() {
     'dist/css/**.css',
     'dist/js/**.js',
     'dist/img/*.{png,jpg,gif}',
-    '**/*.php'
+    '**/*.php',
+    'index.html'
     ];
 
     //initialize browsersync
@@ -64,7 +65,7 @@ gulp.task('sync', function() {
 
 gulp.task('watch', ['sync'], function () {
   gulp.watch('dev/sass/**/**.scss', ['styles']);
-  gulp.watch('dev/js/*.js', ['scripts']);
+  gulp.watch('dev/javascript/*.js', ['scripts']);
   gulp.watch('dev/img/*.*', ['images']);
   gulp.watch('**/.DS_Store', ['remove']);
   gulp.watch('**/**.php');
