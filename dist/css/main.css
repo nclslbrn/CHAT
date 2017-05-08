@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fefefe;
+  background: url(../img/egg_shell.png) repeat;
   color: #333;
   font-family: sans-serif;
 }
@@ -20,38 +20,51 @@ body {
   bottom: 0;
 }
 
-#auto-scroll span {
+#auto-scroll blockquote {
   display: block;
   position: relative;
   padding: .6em 1em;
   max-width: 100%;
   font-family: 'Slabo 27px', serif;
   padding-bottom: .5em;
-  border: 1px solid #efefef;
-  border-left: 0.5em solid #efefef;
+  border: 1px solid #ebebeb;
+  border-left: 0.5em solid #ebebeb;
+  background-color: #f3f3f3;
   overflow: hidden;
 }
-#auto-scroll span.large {
-  font-size: 3.5rem;
-  line-height: 3rem;
-  margin-top: 2rem;
-  padding-top: 0.39815rem;
-  padding-bottom: 0.60185rem;
-  margin-bottom: 2rem;
-}
-#auto-scroll span.regular {
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-top: 0rem;
-  padding-top: 0.87037rem;
-  padding-bottom: 0.12963rem;
-  margin-bottom: 2rem;
-}
-#auto-scroll span.small {
-  font-size: 1.5rem;
-  line-height: 3rem;
+#auto-scroll blockquote.large {
+  font-size: 4rem;
+  line-height: 5rem;
   margin-top: 3rem;
-  padding-top: 0.02778rem;
-  padding-bottom: 0.97222rem;
+  padding-top: 0.24074rem;
+  padding-bottom: 0.75926rem;
+  margin-bottom: 2rem;
+}
+#auto-scroll blockquote.regular {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  padding-top: 0.55556rem;
+  padding-bottom: 0.44445rem;
+  margin-bottom: 2rem;
+}
+#auto-scroll blockquote.small {
+  font-size: 2.3rem;
+  line-height: 4rem;
+  margin-top: 4rem;
+  padding-top: 0.27593rem;
+  padding-bottom: 0.72407rem;
+  margin-bottom: 3rem;
+}
+#auto-scroll blockquote footer {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-top: 2rem;
+  padding-top: 0.11206rem;
+  padding-bottom: 0.88794rem;
   margin-bottom: 1rem;
+  padding-top: 1em;
+  font-family: sans-serif;
+  font-weight: lighter;
+  border-top: 1px solid #ebebeb;
 }

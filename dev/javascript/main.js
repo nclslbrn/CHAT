@@ -2,7 +2,8 @@
  * Put quote into the DOM
  */
 
-function add_quote(i, item, length) {
+function add_quote(i, item, length, user) {
+
   var text_size = '';
 
   if( length < 100 ) {
@@ -15,24 +16,34 @@ function add_quote(i, item, length) {
     text_size = 'regular';
 
   }
-  if( length < 300 && length > 200 ) {
+  if( length > 200 ) {
 
     text_size = 'small';
+
   }
-  $('<span id=\'quote-'+ i +'\' class=\''+ text_size +'\'>' + item + '</span>').appendTo("#auto-scroll").hide().slideDown();
+
+  var footer = '<footer>'+ user +' - il y a quelques instants</footer>';
+
+  $('<blockquote id=\'quote-'+ i +'\' class=\''+ text_size +'\'>' + item + footer + '</blockquote>').appendTo("#auto-scroll").hide().slideDown();
 
 }
+
+
+
 /**
  * Wait function
  */
+
 (function($) {
 
   $.wait = function(duration, completeCallback, target) {
     $target = $(target || '<queue />');
-    return $target.delay(duration).queue(function(next){completeCallback.call($target); next();});
+    return $target.delay( duration ).queue( function( next ) {
+      completeCallback.call( $target ); next();
+    });
   }
 
-  $.fn.wait = function(duration, completeCallback) {
+  $.fn.wait = function( duration, completeCallback ) {
     return $.wait.call(this, duration, completeCallback, this);
   };
 
@@ -41,16 +52,19 @@ function add_quote(i, item, length) {
 /**
  * Read json data
  */
+
 $.getJSON( "json/nt_quotes.json", function( nt_quotes ) {
 
-  $.each(nt_quotes, function(i, item) {
+  var user = 'Nicolas Tesla';
+
+  $.each( nt_quotes, function(i, item) {
 
     var length = item.length;
     var delay = length * 800;
 
     $.wait(delay, function() {
 
-      add_quote(i, item, length );
+      add_quote(i, item, length, user );
 
     });
 

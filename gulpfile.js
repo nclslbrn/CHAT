@@ -24,7 +24,7 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('prod/css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'SASS processing minifying and complete' }));
 });
 
@@ -32,7 +32,8 @@ gulp.task('scripts', function() {
   return gulp.src('dev/javascript/**/*.js')
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
+    //.pipe(uglify())
+    .pipe(uglify().on('error', function(e){ console.log(e); }))
     .pipe(gulp.dest('dist/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
