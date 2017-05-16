@@ -7,4 +7,4 @@ A chat with auto published quotes by:
 - Nicolas Tesla
 - ...
 
-Demo [here](https://nclslbrn.github.io/www_memories/ "www_memories: Demo")
+Demo [here](http://memories.artemg.com/ "memories: Demo")
