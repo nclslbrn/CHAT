@@ -2,7 +2,7 @@
  * Put quote into the DOM
  */
 
-function add_quote(i, item, length, user) {
+function add_quote(i, item, length, author) {
 
   var text_size = '';
 
@@ -22,18 +22,30 @@ function add_quote(i, item, length, user) {
 
   }
 
-  var footer = '<footer>'+ user +' - il y a quelques instants</footer>';
+  var footer = '<footer>'+ author +' - il y a quelques instants</footer>';
 
-  $('<blockquote id=\'quote-'+ i +'\' class=\''+ text_size +'\'>' + item + footer + '</blockquote>').appendTo("#auto-scroll").hide().slideDown();
-
+  $('<blockquote id=\'quote--'+i+'\' class=\''+text_size+'\'>'+item+footer+'</blockquote>').appendTo("#auto-scroll").hide().slideDown();
 }
 
+function chat_reader( quotes ) {
 
+  for( var n in quotes ) {
+
+    var length = quotes[n]['text'].length;
+
+    (function(n){
+
+      setTimeout(function(){
+        add_quote(n, quotes[n]['text'], length, quotes[n]['author'] );
+      }, 500 * length)
+
+    })(n);
+  }
+}
 
 /**
  * Wait function
  */
-
 (function($) {
 
   $.wait = function(duration, completeCallback, target) {
@@ -49,25 +61,24 @@ function add_quote(i, item, length, user) {
 
 })(jQuery);
 
-/**
- * Read json data
- */
+$( document ).ready( function() {
 
-$.getJSON( "json/nt_quotes.json", function( nt_quotes ) {
+  $.ajax({
+    url: 'data/index.php',
+    type: "GET",
+    data: 'chat=start',
+    dataType: "json",
+    success: function(quotes, status) {
 
-  var user = 'Nicolas Tesla';
+      chat_reader(quotes);
+      //console.log(status);
+    },
+    error: function(quotes, status, error) {
+      //console.log(error);
+    },
+    complete: function(quotes, status) {
+      //console.log(status);
 
-  $.each( nt_quotes, function(i, item) {
-
-    var length = item.length;
-    var delay = length * 800;
-
-    $.wait(delay, function() {
-
-      add_quote(i, item, length, user );
-
-    });
-
+    }
   });
-
 });

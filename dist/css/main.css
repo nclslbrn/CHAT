@@ -2,17 +2,20 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url(../img/egg_shell.png) repeat;
-  color: #333;
+  background: #0f0a00 url(../img/logo.svg) no-repeat center center;
+  background-size: 10vw auto;
+  color: #fff;
+  color: #fefefe;
   font-family: sans-serif;
 }
 
 .viewport {
   position: relative;
   display: block;
-  width: 86vw;
-  height: 90vh;
-  margin: 5vh 7vw;
+  width: 80%;
+  height: 90%;
+  min-height: 90%;
+  padding: 5% 10%;
 }
 
 #auto-scroll {
@@ -23,48 +26,36 @@ body {
 #auto-scroll blockquote {
   display: block;
   position: relative;
-  padding: .6em 1em;
-  max-width: 100%;
-  font-family: 'Slabo 27px', serif;
-  padding-bottom: .5em;
-  border: 1px solid #ebebeb;
-  border-left: 0.5em solid #ebebeb;
-  background-color: #f3f3f3;
+  padding: .6em 1em 0;
+  font-family: 'Inconsolata', monospace;
   overflow: hidden;
-}
-#auto-scroll blockquote.large {
-  font-size: 4rem;
-  line-height: 5rem;
-  margin-top: 3rem;
-  padding-top: 0.24074rem;
-  padding-bottom: 0.75926rem;
-  margin-bottom: 2rem;
-}
-#auto-scroll blockquote.regular {
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 3rem;
-  margin-top: 1rem;
-  padding-top: 0.55556rem;
-  padding-bottom: 0.44445rem;
+  margin-top: 2rem;
+  padding-top: 0.99825rem;
+  padding-bottom: 0.00175rem;
   margin-bottom: 2rem;
-}
-#auto-scroll blockquote.small {
-  font-size: 2.3rem;
-  line-height: 4rem;
-  margin-top: 4rem;
-  padding-top: 0.27593rem;
-  padding-bottom: 0.72407rem;
-  margin-bottom: 3rem;
+  /*
+    &.large {
+      max-width: 100%;
+    }
+    &.regular {
+      max-width: 60%;
+    }
+    &.small {
+      max-width: 40%;
+    }
+  */
 }
 #auto-scroll blockquote footer {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1rem;
-  margin-top: 2rem;
-  padding-top: 0.11206rem;
-  padding-bottom: 0.88794rem;
+  margin-top: 1rem;
+  padding-top: 0.18965rem;
+  padding-bottom: 0.81035rem;
   margin-bottom: 1rem;
   padding-top: 1em;
   font-family: sans-serif;
   font-weight: lighter;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px dotted #1f1300;
 }
