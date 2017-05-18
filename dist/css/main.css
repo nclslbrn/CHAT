@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #0f0a00 url(../img/logo.svg) no-repeat center center;
+  background: #1a1304;
   background-size: 10vw auto;
   color: #fff;
   color: #fefefe;
@@ -13,11 +13,46 @@ body {
   position: relative;
   display: block;
   width: 80%;
-  height: 90%;
-  min-height: 90%;
+  height: 86%;
+  max-height: 80%;
   padding: 5% 10%;
 }
 
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -60px;
+  fill: black;
+}
+
+#loader span#progess-bar {
+  display: block;
+  position: relative;
+  width: 0;
+  height: 100%;
+  background-color: #333;
+  -webkit-clip-path: url(#svgPath);
+          clip-path: url(#svgPath);
+}
+
+#loader.active span#progess-bar {
+  animation-name: grow;
+  animation-duration: .75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 #auto-scroll {
   position: absolute;
   bottom: 0;
@@ -57,5 +92,5 @@ body {
   padding-top: 1em;
   font-family: sans-serif;
   font-weight: lighter;
-  border-top: 1px dotted #1f1300;
+  border-top: 0.05rem double #271c06;
 }

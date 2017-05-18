@@ -7,4 +7,4 @@ A chat with auto published quotes by:
 - Nicolas Tesla
 - ...
 
-Demo [here](http://memories.artemg.com/ "memories: Demo")
+Demo [here](https://memories.artemg.com/ "memories: Demo")

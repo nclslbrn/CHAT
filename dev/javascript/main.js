@@ -27,58 +27,58 @@ function add_quote(i, item, length, author) {
   $('<blockquote id=\'quote--'+i+'\' class=\''+text_size+'\'>'+item+footer+'</blockquote>').appendTo("#auto-scroll").hide().slideDown();
 }
 
-function chat_reader( quotes ) {
+function chat_reader( quotes, n ) {
 
-  for( var n in quotes ) {
+  var length = quotes[n]['text'].length;
+  add_quote(n, quotes[n]['text'], length, quotes[n]['author'] );
+  //console.log( n + "/" + quotes.length );
 
-    var length = quotes[n]['text'].length;
+  if( n < (quotes.length-1) ) {
 
-    (function(n){
+    setTimeout(function(){
 
-      setTimeout(function(){
-        add_quote(n, quotes[n]['text'], length, quotes[n]['author'] );
-      }, 500 * length)
+      n++;
+      chat_reader( quotes, n );
 
-    })(n);
+    }, 50 * length);
+
+  } else {
+    setTimeout(function(){
+
+      init();
+
+    }, 50 * length);
   }
 }
 
-/**
- * Wait function
- */
-(function($) {
+function load_quotes(callback) {
 
-  $.wait = function(duration, completeCallback, target) {
-    $target = $(target || '<queue />');
-    return $target.delay( duration ).queue( function( next ) {
-      completeCallback.call( $target ); next();
-    });
-  }
-
-  $.fn.wait = function( duration, completeCallback ) {
-    return $.wait.call(this, duration, completeCallback, this);
-  };
-
-})(jQuery);
-
-$( document ).ready( function() {
+  $('#loader').addClass('active');
 
   $.ajax({
     url: 'data/index.php',
     type: "GET",
     data: 'chat=start',
     dataType: "json",
-    success: function(quotes, status) {
-
-      chat_reader(quotes);
-      //console.log(status);
-    },
-    error: function(quotes, status, error) {
-      //console.log(error);
-    },
+    success: callback,
     complete: function(quotes, status) {
-      //console.log(status);
+
+      $('#loader').removeClass('active');
 
     }
   });
+
+}
+
+function init() {
+  load_quotes(function(quotes){
+    var n = 0;
+    chat_reader(quotes, n);
+  });
+}
+
+$( document ).ready( function() {
+
+  init();
+
 });
