@@ -26,7 +26,7 @@ $quotes['alan-turing'] = array(
     "text" => "Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire."
   ),
   array(
-    "theme" => "be",
+    "theme" => "violence",
     "text" => "Savez-vous pourquoi les gens aiment la violence? C'est parce que ça fait du bien. Les humains trouvent la violence profondément satisfaisante. Mais retirez la satisfaction et l'acte devient creux."
   ),
   array(

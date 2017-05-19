@@ -3,7 +3,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #1a1304;
-  background-size: 10vw auto;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #1a1304 0%, #171716 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  /* IE6-9 */
   color: #fff;
   color: #fefefe;
   font-family: sans-serif;
@@ -13,9 +22,10 @@ body {
   position: relative;
   display: block;
   width: 80%;
-  height: 86%;
-  max-height: 80%;
-  padding: 5% 10%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0 10%;
 }
 
 #loader {
@@ -53,8 +63,22 @@ body {
     width: 100%;
   }
 }
+#quotes-count {
+  position: absolute;
+  width: 40px;
+  height: 2em;
+  bottom: 0;
+  right: 0;
+  line-height: 2em;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  color: #555;
+}
+
 #auto-scroll {
   position: absolute;
+  width: inherit;
   bottom: 0;
 }
 
@@ -85,12 +109,12 @@ body {
 #auto-scroll blockquote footer {
   font-size: 0.8rem;
   line-height: 1rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   padding-top: 0.18965rem;
   padding-bottom: 0.81035rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   padding-top: 1em;
   font-family: sans-serif;
   font-weight: lighter;
-  border-top: 0.05rem double #271c06;
+  border-top: 0.05rem double #171716;
 }

@@ -10,10 +10,9 @@ include_once('functions.php');
 $quotes = array();
 include_once('_nicolas-tesla.php');
 include_once('_alan-turing.php');
-
-$authors_def = array();
-$authors_def['0'] = 'Nicolas Tesla';
-$authors_def['1'] = 'Alan Turing';
+include_once('_isaac-asimov.php');
+include_once('_linus-torvalds.php');
+include_once('_alain-damasio.php');
 
 if( !empty( $_GET['chat']) ) {
 
@@ -24,12 +23,22 @@ if( !empty( $_GET['chat']) ) {
       $themes = get_themes( $quotes );
       $themes_count = count( $themes );
       $random_theme = $themes[ rand( 0, $themes_count ) ];
-      $chat_text = get_chat_text( $random_theme, $quotes, $authors_def );
+      $chat_text = get_chat_text( $random_theme, $quotes );
       echo json_encode( $chat_text );
       break;
 
     case 'continu':
       //do something
+      break;
+
+    case 'dev-themes':
+      $themes = get_themes( $quotes );
+      echo '<ul style=\'list-style-type: decimal-leading-zero;\'>';
+      foreach( $themes as  $theme) {
+        $chat_text = get_chat_text( $theme, $quotes);
+        echo '<li>'.$theme.' ('.count($chat_text).')</li>';
+      }
+      echo '</ul>';
       break;
 
     default:

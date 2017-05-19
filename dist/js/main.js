@@ -22,18 +22,29 @@ function add_quote(i, item, length, author) {
 
   }
 
-  var footer = '<footer>'+ author +' - il y a quelques instants</footer>';
+  var date = new Date();
+  var hours = (("" + date.getHours()).length < 2 ? "0" : "") + date.getHours();
+  var minutes = (("" + date.getMinutes()).length < 2 ? "0" : "") + date.getMinutes();
+  var seconds = (("" + date.getSeconds()).length < 2 ? "0" : "") + date.getSeconds();
+  var footer = '<footer>' + author +' - ' + hours + ':' + minutes + ':' + seconds + '</footer>';
 
-  $('<blockquote id=\'quote--'+i+'\' class=\''+text_size+'\'>'+item+footer+'</blockquote>').appendTo("#auto-scroll").hide().slideDown();
+  $('<blockquote id=\'quote--' + i + '\' class=\'' + text_size + '\'>' + item + footer + '</blockquote>').appendTo("#auto-scroll").hide().slideDown();
 }
 
 function chat_reader( quotes, n ) {
 
-  var length = quotes[n]['text'].length;
-  add_quote(n, quotes[n]['text'], length, quotes[n]['author'] );
-  //console.log( n + "/" + quotes.length );
+  if( quotes[n] != null ){
 
-  if( n < (quotes.length-1) ) {
+    var length = quotes[n]['text'].length;
+    var total_quotes = (quotes.length - 1);
+    add_quote(n, quotes[n]['text'], length, quotes[n]['author'] );
+
+  }
+
+
+  $("#quotes-count").html(n + "/" + total_quotes )
+
+  if( n < total_quotes ) {
 
     setTimeout(function(){
 
@@ -48,6 +59,7 @@ function chat_reader( quotes, n ) {
       init();
 
     }, 50 * length);
+
   }
 }
 

@@ -163,7 +163,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Quand nous parlons de l’humain, nous avons une conception de l’humanité dans son ensemble, avant d’appliquer des méthodes scientifiques pour comprendre son mouvement, nous devons l’accepter comme une réalité physique. Mais quelqu’un peut-il douter aujourd’hui du fait que tous les millions d’individus et tous les innombrables types et caractères constituent une unité ?"
   ),
   array(
-    "theme" => "be",
+    "theme" => "liberty",
     "text" => "Bien que libres de penser et d’agir, nous sommes tenus ensemble, comme les étoiles dans le firmament, avec des liens inséparables. Ces liens ne peuvent être vus, mais nous pouvons les sentir."
   ),
   array(

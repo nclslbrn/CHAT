@@ -20,10 +20,9 @@ function get_themes( $quotes ) {
   return $themes;
 }
 
-function get_chat_text( $random_theme, $quotes, $authors_def ) {
+function get_chat_text( $random_theme, $quotes ) {
 
   $chat_text = array();
-
 
   foreach ($quotes as $author => $quote_by_an_author ) {
 
@@ -38,6 +37,7 @@ function get_chat_text( $random_theme, $quotes, $authors_def ) {
       }
     }
   }
+  shuffle( $chat_text );
   shuffle( $chat_text );
   return $chat_text;
 }
