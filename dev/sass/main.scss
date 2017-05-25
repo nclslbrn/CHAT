@@ -4,7 +4,10 @@
 $bg-color: hsl(40, 72%, 6%);
 $font-color: #fefefe;
 $border-color: desaturate(lighten($bg-color, 3%), 70%);
-$baseline: 0.165500;
+$blockquote-font: 'Ubuntu Mono', monospace;
+$accent-color: #222;
+
+$baseline: 0.169;
 
 
 body {
@@ -12,7 +15,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  @include linearGradient( $bg-color, $border-color);
+
 
   color: #fff;
   color: $font-color;
@@ -22,11 +25,29 @@ body {
 .viewport {
   position: relative;
   display: block;
-  width: 80%;
   height: 100%;
   max-height: 100%;
   margin: 0;
-  padding: 0 10%;
+  @include linearGradient( $bg-color, $border-color);
+
+  @include breakpoint( laptop ) {
+    width: 80%;
+    padding: 0 16% 0 4%;
+
+  }
+
+  @include breakpoint( tablet ) {
+    width: 90%;
+    padding: 0 7% 0 3%;
+  }
+
+  @include breakpoint( mobileonly ) {
+    width: 95%;
+    padding: 0 4% 0 1%;
+
+  }
+
+
 }
 #loader {
   position: absolute;
@@ -82,19 +103,42 @@ body {
   display: block;
   position: relative;
   padding: .6em 1em 0;
-
-  font-family: 'Inconsolata', monospace;
+  font-family: $blockquote-font;
+  letter-spacing: 1px;
+  font-weight: 100;
 
   overflow: hidden;
+  @include breakpoint( mobile ) {
+    @include plumber(
+      $grid-height: 1rem,
+      $baseline: $baseline,
+      $font-size: .9,
+      $line-height: 1,
+      $leading-top: 3,
+      $leading-bottom: 2
+    );
+  }
+  @include breakpoint( tablet ) {
+    @include plumber(
+      $grid-height: 1rem,
+      $baseline: $baseline,
+      $font-size: 1,
+      $line-height: 2,
+      $leading-top: 3,
+      $leading-bottom: 2
+    );
+  }
+  @include breakpoint( laptop ) {
+    @include plumber(
+      $grid-height: 1rem,
+      $baseline: $baseline,
+      $font-size: 1.5,
+      $line-height: 3,
+      $leading-top: 3,
+      $leading-bottom: 2
+    );
+  }
 
-  @include plumber(
-    $grid-height: 1rem,
-    $baseline: $baseline,
-    $font-size: 1.5,
-    $line-height: 3,
-    $leading-top: 3,
-    $leading-bottom: 2
-  );
 /*
   &.large {
     max-width: 100%;
@@ -112,12 +156,13 @@ body {
   		$baseline: 0.112061,
   		$font-size: 0.8,
   		$line-height: 1,
-  		$leading-top: 0,
+  		$leading-top: 1,
   		$leading-bottom: 1
   	);
     padding-top: 1em;
     font-family: sans-serif;
-    font-weight: lighter;
-    border-top: .05rem double $border-color;
+    letter-spacing: 1px;
+    border-top: 2px solid $accent-color;
+    border-bottom: 2px solid $accent-color;
   }
 }

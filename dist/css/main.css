@@ -2,6 +2,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
+  color: #fefefe;
+  font-family: sans-serif;
+}
+
+.viewport {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
   background: #1a1304;
   /* Old browsers */
   /* FF3.6+ */
@@ -13,19 +24,24 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
   /* IE6-9 */
-  color: #fff;
-  color: #fefefe;
-  font-family: sans-serif;
 }
-
-.viewport {
-  position: relative;
-  display: block;
-  width: 80%;
-  height: 100%;
-  max-height: 100%;
-  margin: 0;
-  padding: 0 10%;
+@media (min-width: 64em) {
+  .viewport {
+    width: 80%;
+    padding: 0 16% 0 4%;
+  }
+}
+@media (min-width: 50em) {
+  .viewport {
+    width: 90%;
+    padding: 0 7% 0 3%;
+  }
+}
+@media (max-width: 37.5em) {
+  .viewport {
+    width: 95%;
+    padding: 0 4% 0 1%;
+  }
 }
 
 #loader {
@@ -86,14 +102,10 @@ body {
   display: block;
   position: relative;
   padding: .6em 1em 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Ubuntu Mono", monospace;
+  letter-spacing: 1px;
+  font-weight: 100;
   overflow: hidden;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin-top: 2rem;
-  padding-top: 0.99825rem;
-  padding-bottom: 0.00175rem;
-  margin-bottom: 2rem;
   /*
     &.large {
       max-width: 100%;
@@ -106,15 +118,36 @@ body {
     }
   */
 }
+@media (min-width: 50em) {
+  #auto-scroll blockquote {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    padding-top: 0.669rem;
+    padding-bottom: 0.331rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 64em) {
+  #auto-scroll blockquote {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+    padding-top: 0.0035rem;
+    padding-bottom: 0.9965rem;
+    margin-bottom: 1rem;
+  }
+}
 #auto-scroll blockquote footer {
   font-size: 0.8rem;
   line-height: 1rem;
-  margin-top: 0rem;
+  margin-top: 1rem;
   padding-top: 0.18965rem;
   padding-bottom: 0.81035rem;
   margin-bottom: 0rem;
   padding-top: 1em;
   font-family: sans-serif;
-  font-weight: lighter;
-  border-top: 0.05rem double #171716;
+  letter-spacing: 1px;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
 }

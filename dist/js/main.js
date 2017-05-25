@@ -33,7 +33,7 @@ function add_quote(i, item, length, author) {
 
 function chat_reader( quotes, n ) {
 
-  if( quotes[n] != null ){
+  if( quotes[n]['text'] != null ){
 
     var length = quotes[n]['text'].length;
     var total_quotes = (quotes.length - 1);
@@ -51,14 +51,14 @@ function chat_reader( quotes, n ) {
       n++;
       chat_reader( quotes, n );
 
-    }, 50 * length);
+    }, 100 * length);
 
   } else {
     setTimeout(function(){
 
       init();
 
-    }, 50 * length);
+    }, 100 * length);
 
   }
 }
