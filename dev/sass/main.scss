@@ -9,6 +9,7 @@ $accent-color: #3498db;
 $bg-color: hsl(40, 72%, 6%);
 $border-color: desaturate(lighten($bg-color, 8%), 70%);
 
+$gold: 1.61803398875;
 
 body {
   margin: 0;
@@ -26,8 +27,10 @@ body {
   height: 100%;
   max-height: 100%;
   margin: 0;
-  @include linearGradient( $bg-color, desaturate(lighten($bg-color, 3%), 45%));
-  box-shadow: inset #222 0 0 9vw;
+  background: $bg-color;
+  background-image: url(../img/black-paper.png), radial-gradient(ellipse farthest-corner at 45px 45px , $bg-color 0%, lighten(desaturate($bg-color, 60%), 5%) 50%, $bg-color 95%);
+  background-repeat: repeat, no-repeat;
+  box-shadow: inset $bg-color 0 0 15vw;
 
   @include breakpoint( laptop ) {
     width: 80%;
@@ -135,6 +138,9 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
 
+  white-space: pre-line;
+  text-shadow: 0 4px 1px $bg-color;
+
   overflow: hidden;
   @include breakpoint( mobile ) {
     @include plumber(
@@ -160,10 +166,10 @@ body {
     @include plumber(
       $grid-height: 1rem,
       $baseline: $baseline,
-      $font-size: 1.5,
+      $font-size: 1.2,
       $line-height: 3,
-      $leading-top: 3,
-      $leading-bottom: 2
+      $leading-top: 1,
+      $leading-bottom: 1
     );
 
     &.large {
@@ -181,12 +187,12 @@ body {
     @include plumber(
   		$grid-height: 1rem,
   		$baseline: 0.112061,
-  		$font-size: 0.8,
+  		$font-size: 0.7,
   		$line-height: 1,
   		$leading-top: 1,
   		$leading-bottom: 1
   	);
-    padding-top: 1em;
+    padding-top: 0;
     font-family: sans-serif;
     letter-spacing: 1px;
   //  border-top: 2px solid $border-color;

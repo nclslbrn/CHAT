@@ -67,7 +67,7 @@ gulp.task('sync', function() {
 gulp.task('watch', ['sync'], function () {
   gulp.watch('dev/sass/**/**.scss', ['styles']);
   gulp.watch('dev/javascript/*.js', ['scripts']);
-  gulp.watch('dev/img/*.*', ['images']);
+  gulp.watch('dev/imgages/*.*', ['images']);
   gulp.watch('**/.DS_Store', ['remove']);
   gulp.watch('**/**.php');
 

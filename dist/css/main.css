@@ -14,17 +14,9 @@ body {
   max-height: 100%;
   margin: 0;
   background: #1a1304;
-  /* Old browsers */
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: linear-gradient(to bottom, #1a1304 0%, #1d1911 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
-  /* IE6-9 */
-  box-shadow: inset #222 0 0 9vw;
+  background-image: url(../img/black-paper.png), radial-gradient(ellipse farthest-corner at 45px 45px, #1a1304 0%, #1f1d19 50%, #1a1304 95%);
+  background-repeat: repeat, no-repeat;
+  box-shadow: inset #1a1304 0 0 15vw;
 }
 @media (min-width: 64em) {
   .viewport {
@@ -137,6 +129,8 @@ body {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  white-space: pre-line;
+  text-shadow: 0 4px 1px #1a1304;
   overflow: hidden;
 }
 @media (min-width: 50em) {
@@ -151,12 +145,12 @@ body {
 }
 @media (min-width: 64em) {
   #auto-scroll blockquote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 3rem;
-    margin-top: 2rem;
-    padding-top: 0.9165rem;
-    padding-bottom: 0.0835rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding-top: 0.0332rem;
+    padding-bottom: 0.9668rem;
+    margin-bottom: 0rem;
   }
   #auto-scroll blockquote.large {
     max-width: 100%;
@@ -169,13 +163,13 @@ body {
   }
 }
 #auto-scroll blockquote footer {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   line-height: 1rem;
   margin-top: 1rem;
-  padding-top: 0.18965rem;
-  padding-bottom: 0.81035rem;
+  padding-top: 0.22844rem;
+  padding-bottom: 0.77156rem;
   margin-bottom: 0rem;
-  padding-top: 1em;
+  padding-top: 0;
   font-family: sans-serif;
   letter-spacing: 1px;
 }
