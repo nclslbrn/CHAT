@@ -20,7 +20,7 @@ body {
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(to bottom, #1a1304 0%, #171716 100%);
+  background: linear-gradient(to bottom, #1a1304 0%, #1d1911 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
   /* IE6-9 */
@@ -53,6 +53,7 @@ body {
   margin-top: -15px;
   margin-left: -60px;
   fill: black;
+  z-index: 1;
 }
 
 #loader span#progess-bar {
@@ -83,48 +84,47 @@ body {
   position: absolute;
   width: 40px;
   height: 2em;
-  bottom: 0;
-  right: 0;
+  bottom: 8px;
+  right: 8px;
   line-height: 2em;
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
-  color: #555;
+  color: #242423;
+  border: 1px solid #242423;
+}
+#quotes-count span.index,
+#quotes-count span.total {
+  padding: 0 4px;
+  color: rgba(52, 152, 219, 0.4);
 }
 
 #auto-scroll {
   position: absolute;
   width: inherit;
   bottom: 0;
+  z-index: 10;
 }
 
 #auto-scroll blockquote {
   display: block;
   position: relative;
   padding: .6em 1em 0;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   letter-spacing: 1px;
   font-weight: 100;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   overflow: hidden;
-  /*
-    &.large {
-      max-width: 100%;
-    }
-    &.regular {
-      max-width: 60%;
-    }
-    &.small {
-      max-width: 40%;
-    }
-  */
 }
 @media (min-width: 50em) {
   #auto-scroll blockquote {
     font-size: 1rem;
     line-height: 2rem;
     margin-top: 2rem;
-    padding-top: 0.669rem;
-    padding-bottom: 0.331rem;
+    padding-top: 0.611rem;
+    padding-bottom: 0.389rem;
     margin-bottom: 2rem;
   }
 }
@@ -132,10 +132,19 @@ body {
   #auto-scroll blockquote {
     font-size: 1.5rem;
     line-height: 3rem;
-    margin-top: 3rem;
-    padding-top: 0.0035rem;
-    padding-bottom: 0.9965rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding-top: 0.9165rem;
+    padding-bottom: 0.0835rem;
+    margin-bottom: 2rem;
+  }
+  #auto-scroll blockquote.large {
+    max-width: 100%;
+  }
+  #auto-scroll blockquote.regular {
+    max-width: 90%;
+  }
+  #auto-scroll blockquote.small {
+    max-width: 80%;
   }
 }
 #auto-scroll blockquote footer {
@@ -148,6 +157,6 @@ body {
   padding-top: 1em;
   font-family: sans-serif;
   letter-spacing: 1px;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+  border-top: 2px solid #242423;
+  border-bottom: 2px solid #242423;
 }
