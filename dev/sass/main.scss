@@ -27,6 +27,7 @@ body {
   max-height: 100%;
   margin: 0;
   @include linearGradient( $bg-color, desaturate(lighten($bg-color, 3%), 45%));
+  box-shadow: inset #222 0 0 9vw;
 
   @include breakpoint( laptop ) {
     width: 80%;
@@ -81,11 +82,13 @@ body {
 }
 #quotes-count {
   position:absolute;
-  width: 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
   height: 2em;
   bottom: 8px;
   right: 8px;
-  line-height: 2em;
+  line-height: 2.2em;
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
@@ -94,9 +97,24 @@ body {
 
   span.index,
   span.total {
-    padding: 0 4px;
-    color: transparentize( $accent-color, .6);
+    position: relative;
+    width: 30px;
+    line-height: inherit;
+    height: inherit;
+    text-align: inherit;
+    color: darken( $accent-color, 20%);
   }
+  span.total {
+    background-color: $border-color;
+  }
+}
+#timer-bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: darken( $accent-color, 35%);
 }
 #auto-scroll {
   position: absolute;
@@ -171,7 +189,7 @@ body {
     padding-top: 1em;
     font-family: sans-serif;
     letter-spacing: 1px;
-    border-top: 2px solid $border-color;
-    border-bottom: 2px solid $border-color;
+  //  border-top: 2px solid $border-color;
+  //  border-bottom: 2px solid $border-color;
   }
 }

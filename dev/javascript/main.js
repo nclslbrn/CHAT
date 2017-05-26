@@ -35,16 +35,20 @@ function add_quote(i, item, length, author) {
  */
 function chat_reader( quotes, n, themes_already_used ) {
 
+  $("#timer-bar").animate({width: "0"}, 0 );
   if( quotes[n]['text'] != null ){
 
+    var ms_per_character = 100;
     var length = quotes[n]['text'].length;
+    var delay = length * ms_per_character;
+
     var total_quotes = (quotes.length - 1);
     add_quote( n, quotes[n]['text'], length, quotes[n]['author'] );
 
   }
 
-
-  $("#quotes-count").html("<span class=\"index\">" + (n + 1) + "</span>/<span class=\"total\">" + (total_quotes + 1) ) + "</span>";
+  $("#quotes-count").html("<span class=\"index\">" + (n + 1) + "</span><span class=\"total\">" + (total_quotes + 1) ) + "</span>";
+  $("#timer-bar").animate({width: "100%"}, delay );
 
   if( n < total_quotes ) {
 
@@ -53,14 +57,14 @@ function chat_reader( quotes, n, themes_already_used ) {
       n++;
       chat_reader( quotes, n );
 
-    }, 100 * length);
+    }, delay);
 
   } else {
     setTimeout(function(){
 
       query();
 
-    }, 100 * length);
+    }, delay);
 
   }
 }

@@ -24,6 +24,7 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
   /* IE6-9 */
+  box-shadow: inset #222 0 0 9vw;
 }
 @media (min-width: 64em) {
   .viewport {
@@ -82,11 +83,15 @@ body {
 }
 #quotes-count {
   position: absolute;
-  width: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 60px;
   height: 2em;
   bottom: 8px;
   right: 8px;
-  line-height: 2em;
+  line-height: 2.2em;
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
@@ -95,8 +100,24 @@ body {
 }
 #quotes-count span.index,
 #quotes-count span.total {
-  padding: 0 4px;
-  color: rgba(52, 152, 219, 0.4);
+  position: relative;
+  width: 30px;
+  line-height: inherit;
+  height: inherit;
+  text-align: inherit;
+  color: #196090;
+}
+#quotes-count span.total {
+  background-color: #242423;
+}
+
+#timer-bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #0e354f;
 }
 
 #auto-scroll {
@@ -157,6 +178,4 @@ body {
   padding-top: 1em;
   font-family: sans-serif;
   letter-spacing: 1px;
-  border-top: 2px solid #242423;
-  border-bottom: 2px solid #242423;
 }
