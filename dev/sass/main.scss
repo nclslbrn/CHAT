@@ -94,46 +94,61 @@ body {
     width: 100%;
   }
 }
-#quotes-count {
-  position:absolute;
-  display: flex;
-  justify-content: flex-end;
-  width: 60px;
-  height: 2em;
-  bottom: 8px;
-  right: 8px;
-  line-height: 2.2em;
-  font-size: 1em;
-  font-family: sans-serif;
-  text-align: center;
-  color: $border-color;
-  border: 1px solid $border-color;
-
-  span.index,
-  span.total {
-    position: relative;
-    width: 30px;
-    line-height: inherit;
-    height: inherit;
-    text-align: inherit;
-    color: darken( $accent-color, 20%);
-  }
-  span.total {
-    background-color: $border-color;
-  }
-}
 #timer-bar {
   position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  background-color: darken( $accent-color, 35%);
+  width: 70px;
+  height: 70px;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid transparentize(invert($bg-color), .95);
+
+  #quotes-count {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    z-index: 5;
+
+    line-height: 60px;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+    color: lighten( $border-color, 10%);
+    border-radius: 50%;
+    border: 1px solid transparentize(invert($bg-color), .95);
+
+    span.index,
+    span.total {
+      position: relative;
+      width: 30px;
+      line-height: inherit;
+      height: inherit;
+      text-align: inherit;
+      color: darken( $accent-color, 20%);
+    }
+    span.total {
+
+    }
+  }
+  svg {
+    fill: rgba(0,0,0,0);
+    stroke: $accent-color;
+    stroke-width: 4px;
+    stroke-dasharray: 204.24;
+    stroke-dashoffset: 204.24;
+    z-index: 1;
+  }
 }
+
+
 #auto-scroll {
   position: absolute;
   width: inherit;
   bottom: 0;
+  border-left: 1px solid transparentize(invert($bg-color), .95);
   z-index: 10;
 }
 

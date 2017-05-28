@@ -74,25 +74,35 @@ body {
     width: 100%;
   }
 }
-#quotes-count {
+#timer-bar {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(229, 236, 251, 0.05);
+}
+#timer-bar #quotes-count {
   position: absolute;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
   width: 60px;
-  height: 2em;
-  bottom: 8px;
-  right: 8px;
-  line-height: 2.2em;
+  height: 60px;
+  margin: 4px;
+  z-index: 5;
+  line-height: 60px;
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
-  color: #242423;
-  border: 1px solid #242423;
+  color: #3e3e3c;
+  border-radius: 50%;
+  border: 1px solid rgba(229, 236, 251, 0.05);
 }
-#quotes-count span.index,
-#quotes-count span.total {
+#timer-bar #quotes-count span.index,
+#timer-bar #quotes-count span.total {
   position: relative;
   width: 30px;
   line-height: inherit;
@@ -100,23 +110,20 @@ body {
   text-align: inherit;
   color: #196090;
 }
-#quotes-count span.total {
-  background-color: #242423;
-}
-
-#timer-bar {
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  background-color: #0e354f;
+#timer-bar svg {
+  fill: transparent;
+  stroke: #3498db;
+  stroke-width: 4px;
+  stroke-dasharray: 204.24;
+  stroke-dashoffset: 204.24;
+  z-index: 1;
 }
 
 #auto-scroll {
   position: absolute;
   width: inherit;
   bottom: 0;
+  border-left: 1px solid rgba(229, 236, 251, 0.05);
   z-index: 10;
 }
 

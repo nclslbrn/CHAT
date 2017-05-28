@@ -35,7 +35,13 @@ function add_quote(i, item, length, author) {
  */
 function chat_reader( quotes, n, themes_already_used ) {
 
-  $("#timer-bar").animate({width: "0"}, 0 );
+  $("#timer-bar svg").animate({"stroke-dashoffset": "204.24"}, 0 );
+/*
+  var path = document.querySelector('.progress-circle path');
+  var svg_length = path.getTotalLength();
+
+  console.log(svg_length);
+*/
   if( quotes[n]['text'] != null ){
 
     var ms_per_character = 100;
@@ -47,8 +53,9 @@ function chat_reader( quotes, n, themes_already_used ) {
 
   }
 
-  $("#quotes-count").html("<span class=\"index\">" + (n + 1) + "</span><span class=\"total\">" + (total_quotes + 1) ) + "</span>";
-  $("#timer-bar").animate({width: "100%"}, delay );
+  $("#quotes-count").html("<span class=\"index\">" + (n + 1) + "</span>/<span class=\"total\">" + (total_quotes + 1) ) + "</span>";
+
+  $("#timer-bar svg").animate({"stroke-dashoffset": "0"}, delay );
 
   if( n < total_quotes ) {
 
