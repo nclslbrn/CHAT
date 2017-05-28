@@ -107,7 +107,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Les inventeurs n’ont pas de temps pour la vie conjugale."
   ),
   array(
-    "theme" => "energy",
+    "theme" => "will",
     "text" => "Je fais partie d’une lumière, et cela est la musique. La musique remplit mes six sens, je la vois, l’entends, la sent, la ressent, la touche et la pense. Penser cela est mon sixième sens. Les particules de lumière sont des notes écrites. Un éclair d’orage peut être une sonate entière. Un millier de boules d’éclairs un concert. Pour ce concert j’ai créé une boule de foudre, qui peut être entendue sur les sommets glacés de l’Himalaya."
   ),
   array(
@@ -123,7 +123,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Ce que nous désirons maintenant est un plus proche contact et une meilleure compréhension entre les individus et les communautés partout sur Terre, ainsi que l’élimination de l’égoïsme et de l’orgueil qui sont toujours sujets à plonger le monde dans la barbarie primitive et les conflits… La paix ne peut provenir que comme une conséquence naturelle d’une illumination universelle…"
   ),
   array(
-    "theme" => "energy",
+    "theme" => "nature",
     "text" => "La nature peut atteindre le même résultat à bien des égards. Dans le monde des organismes, dans la vie, une impulsion a commencé à créer, à certains moments, peut-être, à la vitesse de la lumière, à d’autres moments aussi, si lentement que pendant très longtemps cela semblait immobile, traversant des processus d’une complexité inconcevable pour les humains. Mais sous toutes ses formes, à chacune des étapes, son énergie à toujours et a jamais été intégralement présente."
   ),
   array(
@@ -147,11 +147,11 @@ $quotes['nicolas-tesla'] = array(
     "text" => "La plupart des personnes sont tellement absorbés dans la contemplation du monde extérieur qu’ils sont totalement inconscients de ce qui se passe en eux-mêmes. La mort prématurée de millions de personnes est principalement liée à cette cause. Même parmi ceux qui exercent leur attention, c’est une erreur commune pour éviter l’imagination et ignorer les dangers réels. Et ce qui est vrai d’un individu s’applique aussi, plus ou moins, à un peuple dans son ensemble."
   ),
   array(
-    "theme" => "energy",
+    "theme" => "violence",
     "text" => "Nous avons donc trouvé que les trois solutions possibles du grand problème de l’accroissement de l’énergie humaine ont leur réponse par les trois mots : nourriture, paix, travail. Plus d’une année j’ai pensé et réfléchi, me suis perdu moi-même en spéculations et théories, considérant l’humain comme une masse mue par une force, observant son inexplicable mouvement comme quelque chose de mécanique et, appliquant les simples principes de la mécanique à l’analyse de ces derniers jusqu’à ce que j’arrive à ces solutions, juste pour réaliser ce qu’ils m’ont appris au cours de mon enfance."
   ),
   array(
-    "theme" => "energy",
+    "theme" => "physics",
     "text" => "La nourriture accroit la masse, la paix diminue la résistance, et le travail accroit la force qui accélère le mouvement humain. Ce sont les trois seules solutions possibles … pour accroitre l’énergie humaine."
   ),
   array(
@@ -167,7 +167,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Bien que libres de penser et d’agir, nous sommes tenus ensemble, comme les étoiles dans le firmament, avec des liens inséparables. Ces liens ne peuvent être vus, mais nous pouvons les sentir."
   ),
   array(
-    "theme" => "energy",
+    "theme" => "violence",
     "text" => "Je me suis coupé le doigt, et cela me fait mal : ce doigt est une partie de moi. Je vois un ami souffrir, et cela me fait souffrir aussi : mon ami et moi sommes un. Et maintenant, je vois un ennemi terrassé, un morceau de matière dont, de tous les morceaux de matière dans l’univers, je me soucie moins, et cela me chagrine encore. N’est-ce pas la preuve que chacun de nous n’est qu’une partie d’un tout ?"
   ),
   array(
@@ -183,7 +183,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "L’individu est éphémère, les races et les nations viennent et passent, mais l’humain reste. C’est là que réside la différence profonde entre l’individu et l’ensemble."
   ),
   array(
-    "theme" => "energy",
+    "theme" => "power",
     "text" => "L’économie de la transmission d’énergie sans fils est d’une importance suprême pour l’humanité."
   )
 );
