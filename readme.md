@@ -1,5 +1,5 @@
 # Memories
-![drawings](https://github.com/nclslbrn/www_memories/tree/master/dist/img)
+![drawings](https://raw.githubusercontent.com/nclslbrn/www_memories/master/dist/img/assemblage-memories.png)
 
 A chat with quotes by:
 - Isaac Asimov
