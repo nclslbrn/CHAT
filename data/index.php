@@ -8,11 +8,12 @@ include_once('functions.php');
  * @param $quotes[author] = [ theme | text ]
  */
 $quotes = array();
-include_once('_nicolas-tesla.php');
-include_once('_alan-turing.php');
 include_once('_isaac-asimov.php');
-include_once('_linus-torvalds.php');
 include_once('_alain-damasio.php');
+include_once('_michel-foucault.php');
+include_once('_nicolas-tesla.php');
+include_once('_linus-torvalds.php');
+include_once('_alan-turing.php');
 
 if( !empty( $_GET['chat']) ) {
 
@@ -46,7 +47,7 @@ if( !empty( $_GET['chat']) ) {
           $used_themes = array();
 
         }
-        
+
         $random_theme = $themes[ array_rand( $themes ) ];
         $used_themes[]= $random_theme;
 
@@ -67,12 +68,44 @@ if( !empty( $_GET['chat']) ) {
 
     case 'dev':
       $themes = get_themes( $quotes );
+      $total_quotes = 0;
       echo '<ul style=\'list-style-type: decimal-leading-zero;\'>';
+
       foreach( $themes as  $theme) {
-        $chat_text = get_chat_text( $theme, $quotes);
-        echo '<li>'.$theme.' ('.count($chat_text).')</li>';
+
+        $authors = array();
+        $quotes_by_theme = array();
+
+        foreach( $quotes as $author => $quotes_by_an_author  ) {
+
+          foreach ($quotes_by_an_author as $quote) {
+
+            if( $quote['theme'] == $theme) {
+
+              array_push( $authors,  $author);
+              array_push( $quotes_by_theme,  $quotes['text']);
+
+            }
+          }
+        }
+
+        $total_quotes_by_theme = count( $quotes_by_theme );
+        $total_quotes = $total_quotes + $total_quotes_by_theme;
+
+        echo '<li>';
+
+        echo $theme.' ('. $total_quotes_by_theme .')';
+        echo '<ul>';
+        $unique_authors = array_unique( $authors);
+        foreach ( $unique_authors as $author ) {
+          echo '<li>'. $author .'</li>';
+        }
+        echo '</ul>';
+        echo '</li>';
+
       }
       echo '</ul>';
+      echo 'TOTAL: '. $total_quotes;
       break;
 
     default:

@@ -36,10 +36,14 @@ function get_chat_text( $random_theme, $quotes ) {
         $comment = array( 'author' => $author_name, 'text' => $quote['text'] );
 
         if( $n_quotes == 0 || $chat_text[$n_quotes - 1]['author'] !== $author_name ) {
+
           array_push($chat_text, $comment);
           $n_quotes++;
+
         } else {
+
           array_push($temp_text, $comment);
+          
         }
       }
     }
@@ -49,7 +53,7 @@ function get_chat_text( $random_theme, $quotes ) {
 
   $chat_text = array_merge( $chat_text, $temp_text );
   shuffle_assoc( $chat_text );
-  
+
   return $chat_text;
 }
 
