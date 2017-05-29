@@ -19,7 +19,7 @@ $quotes['alan-turing'] = array(
   ),
   array(
     "theme" => "brain",
-    "text" => "Je crois que dans une cinquantaine d’années il sera possible de programmer des ordinateurs, avec une capacité de mémoire d’à peu près 10⁹, pour les faire si bien jouer au jeu de l’imitation qu’un interrogateur moyen n’aura pas plus de 70 pour cent de chances de procéder à l’identification exacte après cinq minutes d’interrogation."
+    "text" => "Je crois que dans une cinquantaine d’années il sera possible de programmer des ordinateurs, avec une capacité de mémoire d’à peu près 10<sup>9</sup>, pour les faire si bien jouer au jeu de l’imitation qu’un interrogateur moyen n’aura pas plus de 70 pour cent de chances de procéder à l’identification exacte après cinq minutes d’interrogation."
   ),
   array(
     "theme" => "ignorance",

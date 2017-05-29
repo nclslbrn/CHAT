@@ -21,20 +21,20 @@ body {
 }
 @media (min-width: 64em) {
   .viewport {
-    width: 80%;
-    padding: 0 16% 0 4%;
+    width: 60%;
+    padding: 0 40% 0 0;
   }
 }
 @media (min-width: 50em) {
   .viewport {
-    width: 90%;
-    padding: 0 7% 0 3%;
+    width: 70%;
+    padding: 0 30% 0 0;
   }
 }
 @media (max-width: 37.5em) {
   .viewport {
-    width: 95%;
-    padding: 0 4% 0 1%;
+    width: 90%;
+    padding: 0 10% 0 0;
   }
 }
 
@@ -76,15 +76,46 @@ body {
 }
 #timer-bar {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  top: 8px;
   bottom: 8px;
   right: 8px;
   border-radius: 50%;
   border: 1px solid rgba(229, 236, 251, 0.05);
 }
-#timer-bar #quotes-count {
+@media (min-width: 64em) {
+  #timer-bar {
+    width: 40%;
+  }
+}
+@media (min-width: 50em) {
+  #timer-bar {
+    width: 30%;
+  }
+}
+@media (max-width: 37.5em) {
+  #timer-bar {
+    width: 10%;
+  }
+}
+#timer-bar #quotes-count,
+#timer-bar .progress-circle {
   position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+#timer-bar .theme {
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  font-size: 2em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transform-origin: right bottom 0;
+}
+#timer-bar #quotes-count {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -127,10 +158,11 @@ body {
   z-index: 10;
 }
 
-#auto-scroll blockquote {
-  display: block;
-  position: relative;
-  padding: .6em 1em 0;
+#auto-scroll table#quote_table {
+  border: 0;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 32px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 1px;
   font-weight: 100;
@@ -138,46 +170,32 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
   white-space: pre-line;
-  text-shadow: 0 4px 1px #1a1304;
-  overflow: hidden;
 }
-@media (min-width: 50em) {
-  #auto-scroll blockquote {
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    padding-top: 0.611rem;
-    padding-bottom: 0.389rem;
-    margin-bottom: 2rem;
-  }
+#auto-scroll table#quote_table.large {
+  max-width: 100%;
 }
-@media (min-width: 64em) {
-  #auto-scroll blockquote {
-    font-size: 1.2rem;
-    line-height: 3rem;
-    margin-top: 1rem;
-    padding-top: 0.0332rem;
-    padding-bottom: 0.9668rem;
-    margin-bottom: 0rem;
-  }
-  #auto-scroll blockquote.large {
-    max-width: 100%;
-  }
-  #auto-scroll blockquote.regular {
-    max-width: 90%;
-  }
-  #auto-scroll blockquote.small {
-    max-width: 80%;
-  }
+#auto-scroll table#quote_table.regular {
+  max-width: 90%;
 }
-#auto-scroll blockquote footer {
-  font-size: 0.7rem;
-  line-height: 1rem;
-  margin-top: 1rem;
-  padding-top: 0.22844rem;
-  padding-bottom: 0.77156rem;
-  margin-bottom: 0rem;
-  padding-top: 0;
-  font-family: sans-serif;
-  letter-spacing: 1px;
+#auto-scroll table#quote_table.small {
+  max-width: 80%;
+}
+#auto-scroll table#quote_table tbody tr {
+  display: table;
+}
+#auto-scroll table#quote_table tbody tr td {
+  vertical-align: top;
+}
+#auto-scroll table#quote_table .quote author {
+  margin-left: .5em;
+  color: #b77e58;
+}
+#auto-scroll table#quote_table .line_count {
+  display: block;
+  color: rgba(52, 152, 219, 0.2);
+  min-width: 80px;
+  margin-right: 1em;
+  padding-right: 1em;
+  text-align: right;
+  border-right: 1px solid rgba(52, 152, 219, 0.2);
 }

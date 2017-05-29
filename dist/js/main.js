@@ -1,6 +1,27 @@
-/**
- * Put quote into the DOM
- */
+/*
+Part of the memories Project (https://memories.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
+*/
+
+var quotes_count = 0;
+var lines_count = 0;
+var themes_already_used = [];
+
+function add_line_number(quote_id) {
+
+  var height = $(quote_id).height();
+  //var line_height = $(quote_id + ' .quote').css('line_height');
+  var line_height = 32; // )-: HARDCODE = SHAME
+  var lines = Math.round( height / line_height );
+
+  for( var i = lines_count + 1 ; i <= lines + lines_count; i++){
+
+  	$(quote_id + ' .line_count').append(i + "<br />");
+
+  }
+  lines_count = lines_count + lines;
+}
+
 function add_quote(i, item, length, author) {
 
   var text_size = '';
@@ -20,28 +41,25 @@ function add_quote(i, item, length, author) {
     text_size = 'small';
 
   }
-
+  quotes_count++;
+  var quote_id = 'quote_' + quotes_count;
   var date = new Date();
   var hours = (("" + date.getHours()).length < 2 ? "0" : "") + date.getHours();
   var minutes = (("" + date.getMinutes()).length < 2 ? "0" : "") + date.getMinutes();
   var seconds = (("" + date.getSeconds()).length < 2 ? "0" : "") + date.getSeconds();
-  var footer = '<footer><author>' + author +'</author> - <time>' + hours + ':' + minutes + ':' + seconds + '</time></footer>';
+  var footer = '<br /><date>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
+  var content = '<tr id=\'' + quote_id + '\'><td class=\'line_count\'></td><td class=\'quote ' + text_size + '\'>' + item + footer + '<br /><br /></td></tr>';
 
-  $('<blockquote class=\'' + text_size + '\'>' + item + footer + '</blockquote>').appendTo("#auto-scroll").hide().slideDown();
+  $(content).appendTo("#quote_table tbody").hide().slideDown();
+  add_line_number('#' + quote_id );
+  //console.log( 'quotes_count: ' + quotes_count );
+  //console.log( 'line_count: ' + lines_count );
 }
 
-/**
- * Add delay between two quotes (depends to length of the first quote)
- */
-function chat_reader( quotes, n, themes_already_used ) {
+function chat_reader( quotes, n ) {
 
   $("#timer-bar svg").animate({"stroke-dashoffset": "204.24"}, 0 );
-/*
-  var path = document.querySelector('.progress-circle path');
-  var svg_length = path.getTotalLength();
 
-  console.log(svg_length);
-*/
   if( quotes[n]['text'] != null ){
 
     var ms_per_character = 100;
@@ -62,7 +80,7 @@ function chat_reader( quotes, n, themes_already_used ) {
     setTimeout(function(){
 
       n++;
-      chat_reader( quotes, n );
+      chat_reader( quotes, n);
 
     }, delay);
 
@@ -93,8 +111,6 @@ function load_quotes( callback ) {
       themes: JSON.stringify( themes_already_used )
     };
 
-    console.log( themes_already_used);
-
   }
   $.ajax({
     url: 'data/index.php',
@@ -118,16 +134,14 @@ function query() {
     var n = 0;
 
     themes_already_used = quotes.themes;
-
+    var current_theme = themes_already_used[themes_already_used.length - 1];
+    $('#timer-bar .theme').html( current_theme );
+    console.log( themes_already_used );
     chat_reader( quotes.texts, n, themes_already_used );
-
-    return themes_already_used;
 
   });
 
 }
-
-var themes_already_used = [];
 
 $( document ).ready( function() {
 

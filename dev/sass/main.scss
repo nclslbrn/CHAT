@@ -44,18 +44,18 @@ body {
 
 
   @include breakpoint( laptop ) {
-    width: 80%;
-    padding: 0 16% 0 4%;
+    width: 60%;
+    padding: 0 40% 0 0;
   }
 
   @include breakpoint( tablet ) {
-    width: 90%;
-    padding: 0 7% 0 3%;
+    width: 70%;
+    padding: 0 30% 0 0;
   }
 
   @include breakpoint( mobileonly ) {
-    width: 95%;
-    padding: 0 4% 0 1%;
+    width: 90%;
+    padding: 0 10% 0 0;
   }
 }
 
@@ -96,15 +96,43 @@ body {
 }
 #timer-bar {
   position: absolute;
-  width: 70px;
-  height: 70px;
+
+  @include breakpoint( laptop ) {
+    width: 40%;
+  }
+
+  @include breakpoint( tablet ) {
+    width: 30%;
+  }
+
+  @include breakpoint( mobileonly ) {
+    width: 10%;
+  }
+  top: 8px;
   bottom: 8px;
   right: 8px;
   border-radius: 50%;
   border: 1px solid transparentize(invert($bg-color), .95);
 
-  #quotes-count {
+  #quotes-count,
+  .progress-circle {
     position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+  .theme {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    font-size: 2em;
+    text-align: center;
+    transform: rotate(-90deg);
+	  transform-origin: right bottom 0;
+  }
+  #quotes-count {
     display: flex;
     justify-content: flex-end;
     width: 60px;
@@ -151,11 +179,11 @@ body {
   border-left: 1px solid transparentize(invert($bg-color), .95);
   z-index: 10;
 }
-
-#auto-scroll blockquote {
-  display: block;
-  position: relative;
-  padding: .6em 1em 0;
+#auto-scroll table#quote_table {
+  border: 0;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 32px;
   font-family: $blockquote-font;
   letter-spacing: 1px;
   font-weight: 100;
@@ -165,63 +193,31 @@ body {
   hyphens: auto;
 
   white-space: pre-line;
-  text-shadow: 0 4px 1px $bg-color;
 
-  overflow: hidden;
-  @include breakpoint( mobile ) {
-    @include plumber(
-      $grid-height: 1rem,
-      $baseline: $baseline,
-      $font-size: .9,
-      $line-height: 1,
-      $leading-top: 3,
-      $leading-bottom: 2
-    );
+  &.large {
+    max-width: 100%;
   }
-  @include breakpoint( tablet ) {
-    @include plumber(
-      $grid-height: 1rem,
-      $baseline: $baseline,
-      $font-size: 1,
-      $line-height: 2,
-      $leading-top: 3,
-      $leading-bottom: 2
-    );
+  &.regular {
+    max-width: 90%;
   }
-  @include breakpoint( laptop ) {
-    @include plumber(
-      $grid-height: 1rem,
-      $baseline: $baseline,
-      $font-size: 1.2,
-      $line-height: 3,
-      $leading-top: 1,
-      $leading-bottom: 1
-    );
-
-    &.large {
-      max-width: 100%;
-    }
-    &.regular {
-      max-width: 90%;
-    }
-    &.small {
-      max-width: 80%;
+  &.small {
+    max-width: 80%;
+  }
+  tbody tr { display: table; }
+  tbody tr td { vertical-align: top; }
+  .quote {
+    author {
+      margin-left: .5em;
+      color: desaturate(complement($accent-color), 30%);
     }
   }
-
-  footer {
-    @include plumber(
-  		$grid-height: 1rem,
-  		$baseline: 0.112061,
-  		$font-size: 0.7,
-  		$line-height: 1,
-  		$leading-top: 1,
-  		$leading-bottom: 1
-  	);
-    padding-top: 0;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-  //  border-top: 2px solid $border-color;
-  //  border-bottom: 2px solid $border-color;
+  .line_count {
+    display: block;
+    color: transparentize( $accent-color, .8);
+    min-width: 80px;
+    margin-right: 1em;
+    padding-right: 1em;
+    text-align: right;
+    border-right: 1px solid transparentize( $accent-color, .8);
   }
 }

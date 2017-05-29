@@ -1,7 +1,9 @@
 <?php
-//Make this script call by another site
-//header('Access-Control-Allow-Origin: *');
-//Include function used to store / retrieve / find / use quotes
+/*
+Part of the memories Project (https://memories.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
+*/
+
 include_once('functions.php');
 /**
  * Main array fill with files below
