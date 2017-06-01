@@ -11,7 +11,7 @@ function add_line_number(quote_id) {
 
   var height = $(quote_id).height();
   //var line_height = $(quote_id + ' .quote').css('line_height');
-  var line_height = 32; // )-: HARDCODE = SHAME
+  var line_height = 32; // )-: HARDCODE = SHAME (this &@!‰#¥Ô removes resonsive rule with line-height property)
   var lines = Math.round( height / line_height );
 
   for( var i = lines_count + 1 ; i <= lines + lines_count; i++){
@@ -50,7 +50,7 @@ function add_quote(i, item, length, author) {
   var footer = '<br /><date>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
   var content = '<tr id=\'' + quote_id + '\'><td class=\'line_count\'></td><td class=\'quote ' + text_size + '\'>' + item + footer + '<br /><br /></td></tr>';
 
-  $(content).appendTo("#quote_table tbody").hide().slideDown();
+  $(content).appendTo("#quote_table tbody").hide().fadeIn();
   add_line_number('#' + quote_id );
   //console.log( 'quotes_count: ' + quotes_count );
   //console.log( 'line_count: ' + lines_count );

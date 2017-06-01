@@ -55,10 +55,6 @@ $quotes['isaac-asimov'] = array(
 . On ne doit jamais les étouffer; il faut les exprimer, les étudier, les tester, les rejeter si nécessaire, mais toujours au grand jour."
   ),
   array(
-    "theme" => "justice",
-    "text"  => "Que tes principes ne t’empêchent jamais de faire ce qui est juste."
-  ),
-  array(
     "theme" => "ignorance",
     "text"  => "L'anti-intellectualisme a été un fil conducteur qui serpente à travers notre vie politique et culturelle, nourrie par la fausse idée que la démocratie signifie que “mon ignorance vaut autant que vos connaissances”."
   ),

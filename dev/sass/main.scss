@@ -6,6 +6,7 @@ $blockquote-font: 'Roboto Mono', monospace;
 $baseline: 0.111;
 
 $accent-color: #3498db;
+$second-color: #903e3e;
 $bg-color: hsl(40, 72%, 6%);
 $border-color: desaturate(lighten($bg-color, 8%), 70%);
 
@@ -22,12 +23,14 @@ body {
 
   background: $bg-color;
   background-image: url( ../img/broken-noise.png ),
-                    radial-gradient( ellipse farthest-corner at 45px 45px,
-                      darken( adjust-hue( $accent-color, 90deg), 65% ) 0%,
-                      darken( desaturate( $accent-color, 30% ), 45% ) 50%,
-                      $bg-color 95%);
-
-  background-repeat: repeat, no-repeat;
+                    radial-gradient( ellipse farthest-corner at 103vw 2vh,
+                    $second-color 0%,
+                    darken( desaturate( $accent-color, 30% ), 45% ) 7%,
+                    darken( $second-color, 10%) 14%,
+                    darken( desaturate( $second-color, 10%), 30% ) 25%,
+                    darken( desaturate( $accent-color, 30% ), 45% ) 50%,
+                    $bg-color 95%);
+  background-repeat: repeat;
   box-shadow: inset $bg-color 0 0 4vw;
 }
 
@@ -37,10 +40,6 @@ body {
   height: 100%;
   max-height: 100%;
   margin: 0;
-  background-image: radial-gradient(ellipse farthest-corner at 90% 50%,
-    darken( adjust-hue( transparentize( $accent-color, .8 ), 120deg ), 35% ) 0%,
-    rgba(0,0,0,0) 100%);
-
 
 
   @include breakpoint( laptop ) {
@@ -98,21 +97,20 @@ body {
   position: absolute;
 
   @include breakpoint( laptop ) {
-    width: 40%;
+    width: 39.8%;
   }
 
   @include breakpoint( tablet ) {
-    width: 30%;
+    width: 29.8%;
   }
 
   @include breakpoint( mobileonly ) {
-    width: 10%;
+    width: 9.8%;
   }
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
-  border-radius: 50%;
-  border: 1px solid transparentize(invert($bg-color), .95);
+  top: 0;
+  bottom: 0;
+  right: 0;
+
 
   #quotes-count,
   .progress-circle {
@@ -123,25 +121,67 @@ body {
   .theme {
     display: block;
     position: absolute;
+    top: 0;
     right: 0;
-    height: 70px;
-    line-height: 70px;
+
+    @include breakpoint( laptop ) {
+      height: 90px;
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    @include breakpoint( tablet ) {
+      height: 60px;
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+
+    @include breakpoint( mobileonly ) {
+      height: 35px;
+      font-size: 1em;
+      line-height: 1em;
+    }
+
+
+    width: 70vh;
+    letter-spacing: 3px;
+
     float: left;
-    font-size: 2em;
-    text-align: center;
+
+    text-transform: uppercase;
+    text-align: right;
     transform: rotate(-90deg);
 	  transform-origin: right bottom 0;
   }
   #quotes-count {
     display: flex;
     justify-content: flex-end;
-    width: 60px;
-    height: 60px;
-    margin: 4px;
+    @include breakpoint( mobileonly ) {
+      width: 30px;
+      height: 30px;
+      margin: 1px;
+      line-height: 30px;
+      font-size: .5em;
+    }
+
+    @include breakpoint( tablet ) {
+      width: 40px;
+      height: 40px;
+      margin: 2px;
+      line-height: 40px;
+      font-size: .8em;
+    }
+    @include breakpoint( desktop ) {
+      width: 60px;
+      height: 60px;
+      margin: 4px;
+      line-height: 60px;
+      font-size: 1em;
+    }
+
     z-index: 5;
 
-    line-height: 60px;
-    font-size: 1em;
+
     font-family: sans-serif;
     text-align: center;
     color: lighten( $border-color, 10%);
@@ -151,23 +191,45 @@ body {
     span.index,
     span.total {
       position: relative;
-      width: 30px;
+      width: 50%;
       line-height: inherit;
       height: inherit;
       text-align: inherit;
       color: darken( $accent-color, 20%);
     }
-    span.total {
 
-    }
+
   }
-  svg {
+  svg.progress-circle {
+    display: block;
+    @include breakpoint( mobileonly ) {
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+    }
+
+    @include breakpoint( tablet ) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    @include breakpoint( laptop ) {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+    }
+
+    margin: -1px;
     fill: rgba(0,0,0,0);
     stroke: $accent-color;
     stroke-width: 4px;
     stroke-dasharray: 204.24;
     stroke-dashoffset: 204.24;
     z-index: 1;
+
+    border: 1px solid transparentize(invert($bg-color), .95);
+
   }
 }
 
@@ -178,8 +240,22 @@ body {
   bottom: 0;
   border-left: 1px solid transparentize(invert($bg-color), .95);
   z-index: 10;
+  @include breakpoint( laptop ) {
+    width: 60%;
+  }
+
+  @include breakpoint( tablet ) {
+    width: 70%;
+  }
+
+  @include breakpoint( mobileonly ) {
+    width: 84%;
+    margin-left: 8px;
+  }
+
 }
 #auto-scroll table#quote_table {
+  display: table;
   border: 0;
   border-collapse: collapse;
   font-size: 16px;
@@ -194,30 +270,41 @@ body {
 
   white-space: pre-line;
 
-  &.large {
-    max-width: 100%;
-  }
-  &.regular {
-    max-width: 90%;
-  }
-  &.small {
-    max-width: 80%;
-  }
+
   tbody tr { display: table; }
-  tbody tr td { vertical-align: top; }
-  .quote {
-    author {
-      margin-left: .5em;
+  tbody tr td { display: table-cell; vertical-align: top; }
+  tbody tr td.quote {
+    position: relative;
+
+    date {
       color: desaturate(complement($accent-color), 30%);
     }
+    author {
+      margin-left: .5em;
+      color: $second-color;
+    }
+
+
   }
   .line_count {
     display: block;
-    color: transparentize( $accent-color, .8);
-    min-width: 80px;
+    @include breakpoint( laptop ) {
+      min-width: 80px;
+    }
+
+    @include breakpoint( tablet ) {
+      min-width: 40px;
+    }
+
+    @include breakpoint( mobileonly ) {
+      display: none;
+    }
+
+
+    color: transparentize( $accent-color, .7);
     margin-right: 1em;
     padding-right: 1em;
     text-align: right;
-    border-right: 1px solid transparentize( $accent-color, .8);
+    border-right: 1px solid transparentize( $accent-color, .7);
   }
 }

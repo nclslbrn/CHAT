@@ -10,7 +10,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "Une chose en tout cas est certaine : c'est que l'homme n'est pas le plus vieux problème ni le plus constant qui se soit posé au savoir"
   ),
   array(
-    "theme" => "idea",
+    "theme" => "isolation",
     "text"  => "Quoi d'étonnant si la prison ressemble aux usines, aux écoles, aux casernes, aux hôpitaux, qui tous ressemblent aux prisons ?"
   ),
   array(
@@ -30,7 +30,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "Par la folie qui l'interrompt, une œuvre ouvre un vide, un temps de silence, une question sans réponse, elle provoque un déchirement sans réconciliation où le monde est bien contraint de s'interroger."
   ),
   array(
-    "theme" => "violence",
+    "theme" => "isolation",
     "text"  => "Le premier monstre juridique que l'on voit apparaître, se dessiner dans le nouveau régime de l'économie du pouvoir de punir, le premier monstre qui apparaît, le premier monstre repéré et qualifié, ce n'est pas l'assassin, ce n'est pas le violateur, ce n'est pas celui qui brise les lois de la nature ; c'est celui qui brise le pacte social fondamental. Le premier monstre, c'est le roi. C'est le roi qui est, je crois, le grand modèle général à partir duquel dériveront historiquement, par toute une série de déplacements et de transformations successives, les innombrables petits monstres qui vont peupler la psychiatrie et la psychiatrie légale du XIXe siècle."
   ),
   array(
@@ -42,7 +42,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "Je ne peux m’empêcher de penser à une critique qui ne chercherait pas à juger, mais à faire exister une œuvre, un livre, une phrase, une idée ; elle allumerait des feux, regarderait l’herbe pousser, écouterait le vent et saisirait l’écume au vol pour l’éparpiller. Elle multiplierait non les jugements, mais les signes d’existence ; elle les appellerait, les tirerait de leur sommeil. Elle les inventerait parfois ? Tant mieux, tant mieux. La critique par sentence m’endort ; j’aimerais une critique par scintillements imaginatifs. Elle ne serait pas souveraine ni vêtue de rouge. Elle porterait l’éclair des orages possibles."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "ignorance",
     "text"  => "Jamais la psychologie ne pourra dire sur la folie la vérité, puisque c'est la folie qui détient la vérité de la psychologie."
   ),
   array(
@@ -62,7 +62,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "L'âme est la prison du corps."
   ),
   array(
-    "theme" => "power",
+    "theme" => "isolation",
     "text"  => "Je veux dire, plus précisément, ceci : je crois que la normalisation, les normalisations disciplinaires, viennent buter de plus en plus contre le système juridique de la souveraineté ; de plus en plus nettement apparaît l'incompatibilité des unes et de l'autre ; de plus en plus est nécessaire une sorte de discours arbitre, une sorte de pouvoir et de savoir que sa sacralisation scientifique rendrait neutre."
   ),
   array(

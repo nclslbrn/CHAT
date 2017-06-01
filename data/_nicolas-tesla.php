@@ -27,7 +27,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Les scientifiques d’aujourd’hui pensent profondément plutôt que clairement. Il faut être sain d’esprit pour penser clairement, mais on peut penser profondément et être totalement fou. Le jour où la science commencera à étudier les phénomènes non physiques, elle fera plus de progrès en une décennie que dans tous les siècles précédents de son existence. Si votre haine pouvait être transformée en électricité, cette dernière éclairerait le monde entier."
   ),
   array(
-    "theme" => "book",
+    "theme" => "religion",
     "text" => "De toutes les choses, celles que je préfère sont les livres."
   ),
   array(

@@ -37,13 +37,17 @@ function get_chat_text( $random_theme, $quotes ) {
 
         if( $n_quotes == 0 || $chat_text[$n_quotes - 1]['author'] !== $author_name ) {
 
-          array_push($chat_text, $comment);
+          array_push( $chat_text, $comment );
           $n_quotes++;
+
+        } elseif ($chat_text[0]['author'] !== $author_name ) {
+
+          $n_quotes = array_unshift( $chat_text, $comment );
 
         } else {
 
           array_push($temp_text, $comment);
-          
+
         }
       }
     }

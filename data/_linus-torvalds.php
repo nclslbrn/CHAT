@@ -12,7 +12,15 @@ $quotes['linus-torvalds'] = array(
   ),
   array(
     "theme" => "religion",
-    "text"  => "Parler coûte peu. Montrez-moi le code source. "
+    "text"  => "Parler coûte peu. Montrez-moi le code source."
+  ),
+  array(
+    "theme" => "power",
+    "text"  => "Je ne pense pas que certaines failles de sécurité spectaculaires devraient être glorifiées ou traitées comme étant plus ”spéciales” qu'un accident aléatoire dû à un mauvais verrouillage."
+  ),
+  array(
+    "theme" => "ignorance",
+    "text"  => "Ce n’est pas un problème lié au noyau, c’est surtout lié à l’infrastructure. Je pense que l’on y arrivera un jour."
   ),
   array(
     "theme" => "science-philosophy",
