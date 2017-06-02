@@ -5,10 +5,144 @@ body {
   color: #fff;
   color: #fefefe;
   font-family: sans-serif;
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #903e3e 0%, #0c161d 7%, #6c2f2f 14%, #221313 25%, #0c161d 50%, #1a1304 95%);
-  background-repeat: repeat;
+  transition: background-color 1s;
   box-shadow: inset #1a1304 0 0 4vw;
+}
+body.ignorance {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1c4cf3 0%, #3459db 4%, #2144bb 7%, #18275e 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.idea {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #3d1cf3 0%, #4d34db 4%, #3821bb 7%, #22185e 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.justice {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #8d1cf3 0%, #8c34db 4%, #7221bb 7%, #3d185e 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.violence {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #de1cf3 0%, #cb34db 4%, #ac21bb 7%, #57185e 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.nature {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31cb8 0%, #db34ad 4%, #bb2190 7%, #5e184b 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.science-philosophy {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31c67 0%, #db346e 4%, #bb2157 7%, #5e1830 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.will {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3221c 0%, #db3834 4%, #bb2521 7%, #5e1a18 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.power {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3721c 0%, #db7734 4%, #bb5f21 7%, #5e3418 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.be {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3c31c 0%, #dbb634 4%, #bb9821 7%, #5e4f18 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.liberty {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #d2f31c 0%, #c2db34 4%, #a4bb21 7%, #545e18 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.physics {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #82f31c 0%, #83db34 4%, #6abb21 7%, #395e18 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.isolation {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #31f31c 0%, #45db34 4%, #30bb21 7%, #1f5e18 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.brain {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf357 0%, #34db62 4%, #21bb4c 7%, #185e2b 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.cosmology {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf3a8 0%, #34dba1 4%, #21bb85 7%, #185e46 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+body.religion {
+  background: #1a1304;
+  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cedf3 0%, #34d7db 4%, #21b7bb 7%, #185c5e 15%, #0c161d 30%, #1a1304 95%);
+  background-repeat: repeat;
+  transition: background-color 1s;
+}
+
+#quote_table tbody tr td.quote date.ignorance {
+  color: #3459db;
+}
+#quote_table tbody tr td.quote date.idea {
+  color: #4d34db;
+}
+#quote_table tbody tr td.quote date.justice {
+  color: #8c34db;
+}
+#quote_table tbody tr td.quote date.violence {
+  color: #cb34db;
+}
+#quote_table tbody tr td.quote date.nature {
+  color: #db34ad;
+}
+#quote_table tbody tr td.quote date.science-philosophy {
+  color: #db346e;
+}
+#quote_table tbody tr td.quote date.will {
+  color: #db3834;
+}
+#quote_table tbody tr td.quote date.power {
+  color: #db7734;
+}
+#quote_table tbody tr td.quote date.be {
+  color: #dbb634;
+}
+#quote_table tbody tr td.quote date.liberty {
+  color: #c2db34;
+}
+#quote_table tbody tr td.quote date.physics {
+  color: #83db34;
+}
+#quote_table tbody tr td.quote date.isolation {
+  color: #45db34;
+}
+#quote_table tbody tr td.quote date.brain {
+  color: #34db62;
+}
+#quote_table tbody tr td.quote date.cosmology {
+  color: #34dba1;
+}
+#quote_table tbody tr td.quote date.religion {
+  color: #34d7db;
 }
 
 .viewport {
@@ -113,11 +247,11 @@ body {
   transform: rotate(-90deg);
   transform-origin: right bottom 0;
 }
-@media (min-width: 64em) {
+@media (max-width: 37.5em) {
   #timer-bar .theme {
-    height: 90px;
-    font-size: 70px;
-    line-height: 70px;
+    height: 35px;
+    font-size: 1em;
+    line-height: 1em;
   }
 }
 @media (min-width: 50em) {
@@ -127,11 +261,11 @@ body {
     line-height: 1.5em;
   }
 }
-@media (max-width: 37.5em) {
+@media (min-width: 64em) {
   #timer-bar .theme {
-    height: 35px;
-    font-size: 1em;
-    line-height: 1em;
+    height: 90px;
+    font-size: 2em;
+    line-height: 3em;
   }
 }
 #timer-bar #quotes-count {
@@ -263,12 +397,9 @@ body {
 #auto-scroll table#quote_table tbody tr td.quote {
   position: relative;
 }
-#auto-scroll table#quote_table tbody tr td.quote date {
-  color: #b77e58;
-}
 #auto-scroll table#quote_table tbody tr td.quote author {
+  color: #ccc;
   margin-left: .5em;
-  color: #903e3e;
 }
 #auto-scroll table#quote_table .line_count {
   display: block;

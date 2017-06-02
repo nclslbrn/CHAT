@@ -9,7 +9,9 @@ $accent-color: #3498db;
 $second-color: #903e3e;
 $bg-color: hsl(40, 72%, 6%);
 $border-color: desaturate(lighten($bg-color, 8%), 70%);
-
+$themes-class: ( "ignorance", "idea", "justice", "violence", "nature", "science-philosophy", "will", "power",
+  "be", "liberty", "physics", "isolation", "brain", "cosmology", "religion", "intelligence");
+$hue-increment: 360 / length($themes-class);
 $gold: 1.61803398875;
 
 body {
@@ -20,20 +22,46 @@ body {
   color: #fff;
   color: $font-color;
   font-family: sans-serif;
-
-  background: $bg-color;
-  background-image: url( ../img/broken-noise.png ),
-                    radial-gradient( ellipse farthest-corner at 103vw 2vh,
-                    $second-color 0%,
-                    darken( desaturate( $accent-color, 30% ), 45% ) 7%,
-                    darken( $second-color, 10%) 14%,
-                    darken( desaturate( $second-color, 10%), 30% ) 25%,
-                    darken( desaturate( $accent-color, 30% ), 45% ) 50%,
-                    $bg-color 95%);
-  background-repeat: repeat;
+  transition: background-color 1s;
   box-shadow: inset $bg-color 0 0 4vw;
+
+  @for $i from 1 to length($themes-class) {
+
+    $deg: $hue-increment * $i;
+    $class: unquote( nth($themes-class, $i));
+    $color: adjust-hue( $accent-color, $deg);
+
+    &.#{$class} {
+
+      background: $bg-color;
+      background-image: url( ../img/broken-noise.png ),
+                        radial-gradient( ellipse farthest-corner at 103vw 2vh,
+                        saturate($color, 20%) 0%,
+                        $color 4%,
+                        darken( $color, 10%) 7%,
+                        darken( desaturate( $color, 10%), 30% ) 15%,
+                        darken( desaturate( $accent-color, 30% ), 45% ) 30%,
+                        $bg-color 95%);
+      background-repeat: repeat;
+      transition: background-color 1s;
+
+
+    }
+  }
 }
 
+#quote_table tbody tr td.quote date {
+  @for $i from 1 to length($themes-class) {
+
+    $deg: $hue-increment * $i;
+    $class: unquote( nth($themes-class, $i));
+    $color: adjust-hue( $accent-color, $deg);
+
+    &.#{$class} {
+      color: $color;
+    }
+  }
+}
 .viewport {
   position: relative;
   display: block;
@@ -124,10 +152,10 @@ body {
     top: 0;
     right: 0;
 
-    @include breakpoint( laptop ) {
-      height: 90px;
-      font-size: 70px;
-      line-height: 70px;
+    @include breakpoint( mobileonly ) {
+      height: 35px;
+      font-size: 1em;
+      line-height: 1em;
     }
 
     @include breakpoint( tablet ) {
@@ -136,11 +164,12 @@ body {
       line-height: 1.5em;
     }
 
-    @include breakpoint( mobileonly ) {
-      height: 35px;
-      font-size: 1em;
-      line-height: 1em;
+    @include breakpoint( laptop ) {
+      height: 90px;
+      font-size: 2em;
+      line-height: 3em;
     }
+
 
 
     width: 70vh;
@@ -275,13 +304,12 @@ body {
   tbody tr td { display: table-cell; vertical-align: top; }
   tbody tr td.quote {
     position: relative;
-
     date {
-      color: desaturate(complement($accent-color), 30%);
+
     }
     author {
+      color: #ccc;
       margin-left: .5em;
-      color: $second-color;
     }
 
 

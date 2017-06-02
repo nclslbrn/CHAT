@@ -2,7 +2,7 @@
 Part of the memories Project (https://memories.artemg.com/)
 Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
 */
-
+var current_theme = '';
 var quotes_count = 0;
 var lines_count = 0;
 var themes_already_used = [];
@@ -47,7 +47,7 @@ function add_quote(i, item, length, author) {
   var hours = (("" + date.getHours()).length < 2 ? "0" : "") + date.getHours();
   var minutes = (("" + date.getMinutes()).length < 2 ? "0" : "") + date.getMinutes();
   var seconds = (("" + date.getSeconds()).length < 2 ? "0" : "") + date.getSeconds();
-  var footer = '<br /><date>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
+  var footer = '<br /><date class=\''+ current_theme + '\'>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
   var content = '<tr id=\'' + quote_id + '\'><td class=\'line_count\'></td><td class=\'quote ' + text_size + '\'>' + item + footer + '<br /><br /></td></tr>';
 
   $(content).appendTo("#quote_table tbody").hide().fadeIn();
@@ -87,6 +87,7 @@ function chat_reader( quotes, n ) {
   } else {
     setTimeout(function(){
 
+      current_theme = '';
       query();
 
     }, delay);
@@ -134,9 +135,10 @@ function query() {
     var n = 0;
 
     themes_already_used = quotes.themes;
-    var current_theme = themes_already_used[themes_already_used.length - 1];
+    current_theme = themes_already_used[themes_already_used.length - 1];
     $('#timer-bar .theme').html( current_theme );
-    console.log( themes_already_used );
+    $('body').removeClass();
+    $('body').addClass( current_theme );
     chat_reader( quotes.texts, n, themes_already_used );
 
   });
