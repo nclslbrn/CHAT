@@ -6,7 +6,7 @@
  */
 $quotes['michel-foucault'] = array(
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "Une chose en tout cas est certaine : c'est que l'homme n'est pas le plus vieux problème ni le plus constant qui se soit posé au savoir"
   ),
   array(
@@ -22,7 +22,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "La théorie de la souveraineté est liée à une forme de pouvoir qui s'exerce sur la terre et les produits de la terre, beaucoup plus que sur les corps et sur ce qu'ils font."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "Le signe n'attend pas silencieusement la venue de celui qui peut le reconnaître : il ne se constitue jamais que par un acte de connaissance."
   ),
   array(
@@ -34,7 +34,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "Le premier monstre juridique que l'on voit apparaître, se dessiner dans le nouveau régime de l'économie du pouvoir de punir, le premier monstre qui apparaît, le premier monstre repéré et qualifié, ce n'est pas l'assassin, ce n'est pas le violateur, ce n'est pas celui qui brise les lois de la nature ; c'est celui qui brise le pacte social fondamental. Le premier monstre, c'est le roi. C'est le roi qui est, je crois, le grand modèle général à partir duquel dériveront historiquement, par toute une série de déplacements et de transformations successives, les innombrables petits monstres qui vont peupler la psychiatrie et la psychiatrie légale du XIXe siècle."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "L'objet des sciences humaines, ce n'est donc pas le langage (parlé pourtant par les seuls hommes), c'est cet être qui, de l'intérieur du langage par lequel il est entouré, se représente, en parlant, le sens des mots ou des propositions qu'il énonce, et se donne finalement la représentation du langage lui-même."
   ),
   array(
@@ -74,15 +74,15 @@ $quotes['michel-foucault'] = array(
     "text"  => "Quand le roi, pour connaître ses droits, interroge les greffiers et les jurisconsultes, quelle réponse peut-il obtenir sinon un savoir établi du point de vue du juge et du procureur que lui, le roi, a créé lui-même, et où, par conséquent, il n'est pas surprenant que le roi trouve, tout naturellement, les louanges de son propre pouvoir."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "De l’homme à l’homme vrai, le chemin passe par l’homme fou."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "La philosophie antique nous apprenait à accepter notre mort. La philosophie moderne, la mort des autres."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Par la folie qui l'interrompt, une œuvre ouvre un vide, un temps de silence, une question sans réponse, elle provoque un déchirement sans réconciliation où le monde est bien contraint de s'interroger."
   ),
   array(

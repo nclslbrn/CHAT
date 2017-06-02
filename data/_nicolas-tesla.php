@@ -19,11 +19,11 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Si vous voulez trouver les secrets de l’univers, pensez en termes d’énergie,  de fréquence, d’information et de vibration."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text" => "Je me fiche qu’ils aient volé mon idée… Je m’inquiète du fait qu’ils n’en aient pas eux-mêmes."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Les scientifiques d’aujourd’hui pensent profondément plutôt que clairement. Il faut être sain d’esprit pour penser clairement, mais on peut penser profondément et être totalement fou. Le jour où la science commencera à étudier les phénomènes non physiques, elle fera plus de progrès en une décennie que dans tous les siècles précédents de son existence. Si votre haine pouvait être transformée en électricité, cette dernière éclairerait le monde entier."
   ),
   array(
@@ -39,7 +39,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Mon cerveau n’est qu’un récepteur, dans l’Univers il y a un cœur duquel on obtient la connaissance, la force et l’inspiration. Je n’ai pas pénétré dans les secrets de ce cœur, mais je sais qu’il existe."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Je ne pense pas que vous puissiez nommer beaucoup de grandes inventions qui ont étés réalisés par des hommes mariés."
   ),
   array(
@@ -59,7 +59,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Tout ce qui était grand dans le passé a été ridiculisé, condamné, combattu, supprimé; seulement pour faire émerger ce qu’il y a de plus puissant et de triomphant de cette lutte."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Aujourd’hui les scientifiques ont substitués les mathématiques aux expériences, alors ils errent d’équation en équation, créant éventuellement une structure qui n’a aucun lien avec la réalité."
   ),
   array(
@@ -67,7 +67,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "La vie est et sera toujours une équation incapable d’être résolue, mais elle contient certains facteurs connus."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text" => "Être seul, c’est le secret de l’inventivité ; être seul, c’est le moment ou les idées naissent."
   ),
   array(
@@ -103,7 +103,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Si étonnants sont les faits dans cette connexion, qu’il semblerait que le Créateur lui-même avait conçu électriquement cette planète."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Les inventeurs n’ont pas de temps pour la vie conjugale."
   ),
   array(
@@ -115,11 +115,11 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Très certainement, quelques planètes ne sont pas habitées, mais d’autres le sont et, parmi toutes ces planètes, il doit exister la vie dans diverses conditions et phases de développement."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "L’homme de science ne vise pas un résultat immédiat. Il ne s’attend pas à ce que les idées qu’il avance soient facilement acceptées. Son travail est comme celui d’un cultivateur, pour l’avenir. Son devoir est de jeter les bases pour ceux qui sont à venir et de montrer la voie. Il vit, travail et espère."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Ce que nous désirons maintenant est un plus proche contact et une meilleure compréhension entre les individus et les communautés partout sur Terre, ainsi que l’élimination de l’égoïsme et de l’orgueil qui sont toujours sujets à plonger le monde dans la barbarie primitive et les conflits… La paix ne peut provenir que comme une conséquence naturelle d’une illumination universelle…"
   ),
   array(
@@ -175,7 +175,7 @@ $quotes['nicolas-tesla'] = array(
     "text" => "Pendant des siècles, cette idée a été proclamée dans les plus répandus des enseignements de sagesse des religions, sans doute pas seulement comme un moyen d’assurer la paix et l’harmonie entre les hommes, mais comme une vérité profondément fondée. Le bouddhiste l’exprime d’une manière, le chrétien d’une autre, mais les deux disent la même chose : Nous sommes tous un."
     ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "La science, elle aussi, reconnaît cette connexion entre les individus séparés, mais pas tout à fait dans le même sens, lorsqu’elle admet que les étoiles, les planètes et les lunes d’une constellation sont un seul corps, et il ne fait aucun doute que ce sera confirmé expérimentalement dans les temps à venir, lorsque nos moyens et méthodes pour enquêter sur les états psychiques et autres phénomènes pourrons avoir été portées à une grande perfection."
   ),
   array(

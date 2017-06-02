@@ -30,10 +30,6 @@ $quotes['alan-turing'] = array(
     "text" => "Savez-vous pourquoi les gens aiment la violence? C'est parce que ça fait du bien. Les humains trouvent la violence profondément satisfaisante. Mais retirez la satisfaction et l'acte devient creux."
   ),
   array(
-    "theme" => "science-philosophy",
-    "text" => "Le raisonnement mathématique peut être considéré ..."
-  ),
-  array(
     "theme" => "be",
     "text" => "Un jour, les dames vont prendre leurs ordinateurs pour se promener dans le parc et se dire: Mon petit ordinateur a dit une chose aussi drôle ce matin."
   ),
@@ -54,7 +50,7 @@ $quotes['alan-turing'] = array(
     "text" => "Les codes sont un casse-tête. Un jeu, tout comme n'importe quel autre jeu."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text" => "Cependant, une caractéristique que je voudrais proposer devrait être incorporée dans les machines, et c'est un élément aléatoire. Chaque machine doit être fournie avec une bande portant une série aléatoire de figures, par exemple, 0 et 1 en quantités égales, et cette série de figures doit être utilisée dans les choix effectués par la machine. Cela entraînerait que le comportement de la machine ne soit pas complètement déterminé par les expériences auxquelles il a été soumis et aurait des utilisations précieuses lorsque l'on expérimente."
   ),
   array(
@@ -63,11 +59,11 @@ $quotes['alan-turing'] = array(
   ),
   array(
     "theme" => "intelligence",
-    "text" => "Il semble probable qu'une fois que la méthode de la pensée de la machine avait commencé, il ne faudrait pas longtemps pour dépasser nos faibles puissances ... Ils pourraient converser les uns avec les autres pour affiner leurs esprits. À un certain stade, nous devrions nous attendre à ce que les machines prennent le contrôle."
+    "text" => "Il semble probable qu'une fois que la méthode de la pensée de la machine avait commencé, il ne faudrait pas longtemps pour dépasser nos faibles puissances... Ils pourraient converser les uns avec les autres pour affiner leurs esprits. À un certain stade, nous devrions nous attendre à ce que les machines prennent le contrôle."
   ),
   array(
-    "theme" => "science-philosophy",
-    "text" => "Le raisonnement mathématique peut être considéré de manière plutôt schématique comme l'exercice d'une combinaison de deux installations, que l'on peut appeler l'intuition et l'ingéniosité. L'activité de l'intuition consiste à faire des jugements spontanés qui ne sont pas le résultat de comportements conscients ... L'exercice de l'ingéniosité en mathématiques consiste à aider l'intuition par des arrangements appropriés de propositions, et peut-être des figures géométriques ou des dessins."
+    "theme" => "epistemology",
+    "text" => "Le raisonnement mathématique peut être considéré de manière plutôt schématique comme l'exercice d'une combinaison de deux installations, que l'on peut appeler l'intuition et l'ingéniosité. L'activité de l'intuition consiste à faire des jugements spontanés qui ne sont pas le résultat de comportements conscients... L'exercice de l'ingéniosité en mathématiques consiste à aider l'intuition par des arrangements appropriés de propositions, et peut-être des figures géométriques ou des dessins."
   ),
   array(
     "theme" => "brain",

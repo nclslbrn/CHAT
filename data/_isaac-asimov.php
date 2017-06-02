@@ -14,7 +14,7 @@ $quotes['isaac-asimov'] = array(
     "text"  => "Souvent les gens prennent leurs propres lacunes pour celles de la société qui les entoure, et cherchent à réformer ladite société parce qu'ils sont incapables de se réformer eux-mêmes."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "En science, la phrase la plus excitante que l'on peut entendre, celle qui annonce des nouvelles découvertes, ce n'est pas “Eureka” mais c'est “drôle”."
   ),
   array(
@@ -34,19 +34,19 @@ $quotes['isaac-asimov'] = array(
     "text"  => "Si le savoir peut créer des problèmes, ce n'est pas l'ignorance qui les résoudra."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "On pratique le culte du passé. On stagne !."
   ),
   array(
-    "theme" =>  "science-philosophy",
+    "theme" =>  "epistemology",
     "text"  => "La connaissance scientifique possède en quelque sorte des propriétés fractales: nous aurons beau accroître notre savoir, le reste -- si infime soit-il -- sera toujours aussi infiniment complexe que l'ensemble de départ."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "Une “information fausse” est par définition incompatible avec toute autre information connue."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "L’aspect le plus triste de notre vie aujourd’hui est que la science acquière les connaissances plus vite que la société n’acquière la sagesse."
   ),
   array(
@@ -59,7 +59,7 @@ $quotes['isaac-asimov'] = array(
     "text"  => "L'anti-intellectualisme a été un fil conducteur qui serpente à travers notre vie politique et culturelle, nourrie par la fausse idée que la démocratie signifie que “mon ignorance vaut autant que vos connaissances”."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Rien de tel qu’un robot pour attraper un robot."
   ),
   array(
@@ -67,7 +67,7 @@ $quotes['isaac-asimov'] = array(
     "text"  =>  "À la volonté d’un mort, j’opposerai la détermination d’un vivant."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Une bonne question est la clé qui permet de déboucher sur une infinité de réponses."
   ),
   array(
@@ -75,11 +75,11 @@ $quotes['isaac-asimov'] = array(
     "text"  => "Ne laissez jamais vos principes de morale vous empêcher de faire ce qui est juste."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Si je vous comprends bien, nous sommes sur la bonne voie : il est urgent d’attendre."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "La vie est agréable. La mort est paisible. C'est la transition qui est désagréable."
   )
 );

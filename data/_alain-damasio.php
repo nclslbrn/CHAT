@@ -14,11 +14,11 @@
     "text"  => "Change l'ordre du monde... Plutôt que tes désirs... Tes désirs sont désordres..."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Le hasard est un allié aussi fugitif que mortel. Il te tue avec la même facilité qu'il te sauve."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "J’ai besoin de cette énergie fluante du groupe, de sentir les tensions et les fusions qui nous traversent, chacun et tous. J’ai besoin de me sentir noué dans la pelote de nos fils."
   ),
   array(
@@ -27,8 +27,8 @@
   ),
   array(
     "theme" => "power",
-    "text"  => "Plus un pouvoir se veut efficace, moins il se manifeste comme pouvoir. Non seulement il a renoncé depuis un siècle aux contraintes physiques , mais il évite désormais toute espèce d'injonction , d'ordre impératif ou d'interdiction formelle .
-Les pouvoirs modernes, je vous l'ai assez répété , se déploient dans l'intangible , l'invisible et l'interstitiel ."
+    "text"  => "Plus un pouvoir se veut efficace, moins il se manifeste comme pouvoir. Non seulement il a renoncé depuis un siècle aux contraintes physiques, mais il évite désormais toute espèce d'injonction, d'ordre impératif ou d'interdiction formelle .
+Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intangible, l'invisible et l'interstitiel ."
   ),
   array(
     "theme" => "be",
@@ -47,7 +47,7 @@ Les pouvoirs modernes, je vous l'ai assez répété , se déploient dans l'intan
     "text"  => "D'une certaine façon, être vivant ne s'atteint que par ce triple combat : contre les forces de gravité en nous - la paresse, la fatigue, la quête du repos ; contre l'instinct de répétition - le déjà-fait, la connu, le sécurisant ; et enfin contre les séductions du continu - tous les développements durables, le réformisme ou ce goût très fréole de la variation plaisante, du pianotement des écarts autour d'une mélodie amusante."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "La folie n'est plus folle, dès qu'elle est collective. Je crois que j'aurais pu faire n'importe quoi, le plus absurde, tant que nous le ferions ensemble ; ensemble, je sentais la puissance de chacun, physique et mentale, j'avais confiance en nous, et j'éprouvais cette profondeur du lien qui nous cousait à même la vague."
   ),
   array(
@@ -75,7 +75,7 @@ Les pouvoirs modernes, je vous l'ai assez répété , se déploient dans l'intan
     "text"  => "Dans un jeu vidéo, tu peux mourir infiniment."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "L'imitation et le conformisme se propagent en coulée de ciment et pourvoient à la cohésion du corps social."
   ),
   array(

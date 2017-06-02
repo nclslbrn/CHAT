@@ -7,7 +7,7 @@
 
 $quotes['linus-torvalds'] = array(
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "J'ai toujours raison. Cette fois j'ai simplement encore plus raison que d'habitude."
   ),
   array(
@@ -23,7 +23,7 @@ $quotes['linus-torvalds'] = array(
     "text"  => "Ce n’est pas un problème lié au noyau, c’est surtout lié à l’infrastructure. Je pense que l’on y arrivera un jour."
   ),
   array(
-    "theme" => "science-philosophy",
+    "theme" => "epistemology",
     "text"  => "“Test de non-régression”? Qu'est-ce? Si cela compile, c'est bon, et si cela amorce, c'est parfait."
   ),
   array(
@@ -31,7 +31,7 @@ $quotes['linus-torvalds'] = array(
     "text"  => "Mon nom est Linus et je suis votre Dieu."
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Si vous continuez à ne pas apprécier, ce n'est pas grave: c'est la raison pour laquelle je suis le patron. Je sais mieux que vous. "
   ),
   array(
@@ -47,7 +47,7 @@ $quotes['linus-torvalds'] = array(
     "text"  => "J'ai un ego gros comme une petite planète. "
   ),
   array(
-    "theme" => "idea",
+    "theme" => "ideas",
     "text"  => "Les questions non-techniques n'ont parfois aucune réponse."
   )
 );
