@@ -76,7 +76,7 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "ideas",
-    "text"  => "Si je vous comprends bien, nous sommes sur la bonne voie : il est urgent d’attendre."
+    "text"  => "Si je vous comprends bien, nous sommes sur la bonne voie: il est urgent d’attendre."
   ),
   array(
     "theme" => "ideas",

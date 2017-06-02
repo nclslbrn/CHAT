@@ -48,7 +48,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "cosmology",
-    "text" => "Parmi les choses répandues au hasard, le plus beau : le cosmos. L'harmonie invisible plus belle que la visible. Nature aime se cacher."
+    "text" => "Parmi les choses répandues au hasard, le plus beau: le cosmos. L'harmonie invisible plus belle que la visible. Nature aime se cacher."
   ),
   array(
     "theme" => "ideas",

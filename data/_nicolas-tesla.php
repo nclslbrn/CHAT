@@ -148,7 +148,7 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "violence",
-    "text" => "Nous avons donc trouvé que les trois solutions possibles du grand problème de l’accroissement de l’énergie humaine ont leur réponse par les trois mots : nourriture, paix, travail. Plus d’une année j’ai pensé et réfléchi, me suis perdu moi-même en spéculations et théories, considérant l’humain comme une masse mue par une force, observant son inexplicable mouvement comme quelque chose de mécanique et, appliquant les simples principes de la mécanique à l’analyse de ces derniers jusqu’à ce que j’arrive à ces solutions, juste pour réaliser ce qu’ils m’ont appris au cours de mon enfance."
+    "text" => "Nous avons donc trouvé que les trois solutions possibles du grand problème de l’accroissement de l’énergie humaine ont leur réponse par les trois mots: nourriture, paix, travail. Plus d’une année j’ai pensé et réfléchi, me suis perdu moi-même en spéculations et théories, considérant l’humain comme une masse mue par une force, observant son inexplicable mouvement comme quelque chose de mécanique et, appliquant les simples principes de la mécanique à l’analyse de ces derniers jusqu’à ce que j’arrive à ces solutions, juste pour réaliser ce qu’ils m’ont appris au cours de mon enfance."
   ),
   array(
     "theme" => "physics",
@@ -168,11 +168,11 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "violence",
-    "text" => "Je me suis coupé le doigt, et cela me fait mal : ce doigt est une partie de moi. Je vois un ami souffrir, et cela me fait souffrir aussi : mon ami et moi sommes un. Et maintenant, je vois un ennemi terrassé, un morceau de matière dont, de tous les morceaux de matière dans l’univers, je me soucie moins, et cela me chagrine encore. N’est-ce pas la preuve que chacun de nous n’est qu’une partie d’un tout ?"
+    "text" => "Je me suis coupé le doigt, et cela me fait mal: ce doigt est une partie de moi. Je vois un ami souffrir, et cela me fait souffrir aussi: mon ami et moi sommes un. Et maintenant, je vois un ennemi terrassé, un morceau de matière dont, de tous les morceaux de matière dans l’univers, je me soucie moins, et cela me chagrine encore. N’est-ce pas la preuve que chacun de nous n’est qu’une partie d’un tout ?"
   ),
   array(
     "theme" => "religion",
-    "text" => "Pendant des siècles, cette idée a été proclamée dans les plus répandus des enseignements de sagesse des religions, sans doute pas seulement comme un moyen d’assurer la paix et l’harmonie entre les hommes, mais comme une vérité profondément fondée. Le bouddhiste l’exprime d’une manière, le chrétien d’une autre, mais les deux disent la même chose : Nous sommes tous un."
+    "text" => "Pendant des siècles, cette idée a été proclamée dans les plus répandus des enseignements de sagesse des religions, sans doute pas seulement comme un moyen d’assurer la paix et l’harmonie entre les hommes, mais comme une vérité profondément fondée. Le bouddhiste l’exprime d’une manière, le chrétien d’une autre, mais les deux disent la même chose: Nous sommes tous un."
     ),
   array(
     "theme" => "epistemology",

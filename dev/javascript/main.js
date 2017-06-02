@@ -10,7 +10,7 @@ var themes_already_used = [];
 function add_line_number(quote_id) {
 
   var height = $(quote_id).height();
-  //var line_height = $(quote_id + ' .quote').css('line_height');
+  //var line_height = $(quote_id + ' .quote').css('line_height'); // doesn't work
   var line_height = 32; // )-: HARDCODE = SHAME (this &@!‰#¥Ô removes resonsive rule with line-height property)
   var lines = Math.round( height / line_height );
 
@@ -44,9 +44,9 @@ function add_quote(i, item, length, author) {
   quotes_count++;
   var quote_id = 'quote_' + quotes_count;
   var date = new Date();
-  var hours = (("" + date.getHours()).length < 2 ? "0" : "") + date.getHours();
-  var minutes = (("" + date.getMinutes()).length < 2 ? "0" : "") + date.getMinutes();
-  var seconds = (("" + date.getSeconds()).length < 2 ? "0" : "") + date.getSeconds();
+  var hours = (("" + date.getHours()).length < 2 ? "0": "") + date.getHours();
+  var minutes = (("" + date.getMinutes()).length < 2 ? "0": "") + date.getMinutes();
+  var seconds = (("" + date.getSeconds()).length < 2 ? "0": "") + date.getSeconds();
   var footer = '<br /><date class=\''+ current_theme + '\'>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
   var content = '<tr id=\'' + quote_id + '\'><td class=\'line_count\'></td><td class=\'quote ' + text_size + '\'>' + item + footer + '<br /><br /></td></tr>';
 

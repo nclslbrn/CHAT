@@ -7,7 +7,7 @@
 $quotes['michel-foucault'] = array(
   array(
     "theme" => "epistemology",
-    "text"  => "Une chose en tout cas est certaine : c'est que l'homme n'est pas le plus vieux problème ni le plus constant qui se soit posé au savoir"
+    "text"  => "Une chose en tout cas est certaine: c'est que l'homme n'est pas le plus vieux problème ni le plus constant qui se soit posé au savoir"
   ),
   array(
     "theme" => "isolation",
@@ -23,7 +23,7 @@ $quotes['michel-foucault'] = array(
   ),
   array(
     "theme" => "epistemology",
-    "text"  => "Le signe n'attend pas silencieusement la venue de celui qui peut le reconnaître : il ne se constitue jamais que par un acte de connaissance."
+    "text"  => "Le signe n'attend pas silencieusement la venue de celui qui peut le reconnaître: il ne se constitue jamais que par un acte de connaissance."
   ),
   array(
     "theme" => "liberty",
@@ -55,7 +55,7 @@ $quotes['michel-foucault'] = array(
   ),
   array(
     "theme" => "will",
-    "text"  => "Il me semble que le monstre humain, que la nouvelle économie du pouvoir de punir a commencé à dessiner au XVIIIe siècle, est une figure où se combinent fondamentalement ces deux grands thèmes de l'inceste des rois et du cannibalisme des affamés. Ce sont ces deux thèmes, formés à la fin du XVIIIe siècle dans le nouveau régime de l'économie des punitions et dans le contexte particulier de la Révolution française, avec les deux grandes formes de hors-la-loi selon la pensée bourgeoise et la politique bourgeoise, c'est-à-dire le souverain despotique et le peuple révolté ; ce sont ces deux figures-là que vous voyez maintenant parcourir le champ de l'anomalie. Les deux grands monstres qui veillent sur le domaine de l'anomalie et qui ne sont pas encore endormis — l'ethnologie et la psychanalyse en font foi — sont les deux grands sujets de la consommation interdite : le roi incestueux et le peuple cannibale."
+    "text"  => "Il me semble que le monstre humain, que la nouvelle économie du pouvoir de punir a commencé à dessiner au XVIIIe siècle, est une figure où se combinent fondamentalement ces deux grands thèmes de l'inceste des rois et du cannibalisme des affamés. Ce sont ces deux thèmes, formés à la fin du XVIIIe siècle dans le nouveau régime de l'économie des punitions et dans le contexte particulier de la Révolution française, avec les deux grandes formes de hors-la-loi selon la pensée bourgeoise et la politique bourgeoise, c'est-à-dire le souverain despotique et le peuple révolté ; ce sont ces deux figures-là que vous voyez maintenant parcourir le champ de l'anomalie. Les deux grands monstres qui veillent sur le domaine de l'anomalie et qui ne sont pas encore endormis — l'ethnologie et la psychanalyse en font foi — sont les deux grands sujets de la consommation interdite: le roi incestueux et le peuple cannibale."
   ),
   array(
     "theme" => "liberty",
@@ -63,11 +63,11 @@ $quotes['michel-foucault'] = array(
   ),
   array(
     "theme" => "isolation",
-    "text"  => "Je veux dire, plus précisément, ceci : je crois que la normalisation, les normalisations disciplinaires, viennent buter de plus en plus contre le système juridique de la souveraineté ; de plus en plus nettement apparaît l'incompatibilité des unes et de l'autre ; de plus en plus est nécessaire une sorte de discours arbitre, une sorte de pouvoir et de savoir que sa sacralisation scientifique rendrait neutre."
+    "text"  => "Je veux dire, plus précisément, ceci: je crois que la normalisation, les normalisations disciplinaires, viennent buter de plus en plus contre le système juridique de la souveraineté ; de plus en plus nettement apparaît l'incompatibilité des unes et de l'autre ; de plus en plus est nécessaire une sorte de discours arbitre, une sorte de pouvoir et de savoir que sa sacralisation scientifique rendrait neutre."
   ),
   array(
     "theme" => "power",
-    "text"  => "Ou la vérité donne la force, ou la vérité déséquilibre, accentue les dissymétries et fait pencher finalement la victoire d'un côté plutôt que de l'autre : la vérité est un plus de force, tout comme elle ne se déploie qu'à partir d'un rapport de force."
+    "text"  => "Ou la vérité donne la force, ou la vérité déséquilibre, accentue les dissymétries et fait pencher finalement la victoire d'un côté plutôt que de l'autre: la vérité est un plus de force, tout comme elle ne se déploie qu'à partir d'un rapport de force."
   ),
   array(
     "theme" => "power",
@@ -87,7 +87,7 @@ $quotes['michel-foucault'] = array(
   ),
   array(
     "theme" => "liberty",
-    "text"  => "La prison : une caserne un peu stricte, une école sans indulgence, un sombre atelier, mais, à la limite, rien de qualitativement différent."
+    "text"  => "La prison: une caserne un peu stricte, une école sans indulgence, un sombre atelier, mais, à la limite, rien de qualitativement différent."
   ),
   array(
     "theme" => "liberty",
