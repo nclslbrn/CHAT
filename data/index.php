@@ -12,6 +12,7 @@ include_once('functions.php');
 $quotes = array();
 include_once('_isaac-asimov.php');
 include_once('_alain-damasio.php');
+include_once('_heraclite-d-ephese.php');
 include_once('_michel-foucault.php');
 include_once('_nicolas-tesla.php');
 include_once('_linus-torvalds.php');

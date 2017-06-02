@@ -30,7 +30,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "Par la folie qui l'interrompt, une œuvre ouvre un vide, un temps de silence, une question sans réponse, elle provoque un déchirement sans réconciliation où le monde est bien contraint de s'interroger."
   ),
   array(
-    "theme" => "isolation",
+    "theme" => "justice",
     "text"  => "Le premier monstre juridique que l'on voit apparaître, se dessiner dans le nouveau régime de l'économie du pouvoir de punir, le premier monstre qui apparaît, le premier monstre repéré et qualifié, ce n'est pas l'assassin, ce n'est pas le violateur, ce n'est pas celui qui brise les lois de la nature ; c'est celui qui brise le pacte social fondamental. Le premier monstre, c'est le roi. C'est le roi qui est, je crois, le grand modèle général à partir duquel dériveront historiquement, par toute une série de déplacements et de transformations successives, les innombrables petits monstres qui vont peupler la psychiatrie et la psychiatrie légale du XIXe siècle."
   ),
   array(
@@ -94,7 +94,7 @@ $quotes['michel-foucault'] = array(
     "text"  => "La prison fabrique des délinquants, mais les délinquants sont finalement utiles, dans le domaine économique comme dans le domaine politique."
   ),
   array(
-    "theme" => "power",
+    "theme" => "justice",
     "text"  => "Devant la justice du souverain, toutes les voix doivent se taire."
   ),
   array(
