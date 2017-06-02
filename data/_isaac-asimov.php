@@ -51,8 +51,7 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "violence",
-    "text"  => "Comment peut-tu faire mal à quelqu'un avec un livre? D'accord, si tu lui tapes sur la tête avec. Mais pas autrement. Les idées ne peuvent pas faire de mal - même les idées fausses, même les idées idiotes et haineuses. Ce sont les gens qui font le mal. Ils s'emparent quelquefois de certaines idées, et s'en servent comme d'un justificatif pour faire des choses invraisemblables et atroces. L'histoire humaine en est pleine d'exemples. Mais les idées elles-mêmes ne sont que des idées
-. On ne doit jamais les étouffer; il faut les exprimer, les étudier, les tester, les rejeter si nécessaire, mais toujours au grand jour."
+    "text"  => "Comment peut-tu faire mal à quelqu'un avec un livre? D'accord, si tu lui tapes sur la tête avec. Mais pas autrement. Les idées ne peuvent pas faire de mal - même les idées fausses, même les idées idiotes et haineuses. Ce sont les gens qui font le mal. Ils s'emparent quelquefois de certaines idées, et s'en servent comme d'un justificatif pour faire des choses invraisemblables et atroces. L'histoire humaine en est pleine d'exemples. Mais les idées elles-mêmes ne sont que des idées. On ne doit jamais les étouffer; il faut les exprimer, les étudier, les tester, les rejeter si nécessaire, mais toujours au grand jour."
   ),
   array(
     "theme" => "ignorance",

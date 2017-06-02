@@ -5,104 +5,75 @@ body {
   color: #fff;
   color: #fefefe;
   font-family: sans-serif;
-  transition: background-color 1s;
+  overflow: hidden;
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
+  background: #1a1304;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1c9df3 0%, #3498db 4%, #217dbb 7%, #18425e 15%, #0c161d 30%, #1a1304 95%);
   box-shadow: inset #1a1304 0 0 4vw;
 }
 body.ignorance {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1c51f3 0%, #345ddb 4%, #2147bb 7%, #18295e 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1c51f3 0%, #345ddb 4%, #2147bb 7%, #18295e 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.ideas {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #331cf3 0%, #4634db 4%, #3221bb 7%, #1f185e 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #331cf3 0%, #4634db 4%, #3221bb 7%, #1f185e 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.justice {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #7f1cf3 0%, #8134db 4%, #6821bb 7%, #38185e 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #7f1cf3 0%, #8134db 4%, #6821bb 7%, #38185e 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.violence {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #cb1cf3 0%, #bc34db 4%, #9e21bb 7%, #51185e 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #cb1cf3 0%, #bc34db 4%, #9e21bb 7%, #51185e 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.nature {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31ccf 0%, #db34bf 4%, #bb21a1 7%, #5e1853 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31ccf 0%, #db34bf 4%, #bb21a1 7%, #5e1853 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.epistemology {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31c83 0%, #db3484 4%, #bb216b 7%, #5e183a 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31c83 0%, #db3484 4%, #bb216b 7%, #5e183a 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.will {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31c38 0%, #db3449 4%, #bb2135 7%, #5e1821 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f31c38 0%, #db3449 4%, #bb2135 7%, #5e1821 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.power {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f34c1c 0%, #db5a34 4%, #bb4421 7%, #5e2818 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f34c1c 0%, #db5a34 4%, #bb4421 7%, #5e2818 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.be {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3981c 0%, #db9434 4%, #bb7a21 7%, #5e4018 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3981c 0%, #db9434 4%, #bb7a21 7%, #5e4018 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.liberty {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3e41c 0%, #dbcf34 4%, #bbb021 7%, #5e5918 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #f3e41c 0%, #dbcf34 4%, #bbb021 7%, #5e5918 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.physics {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #b6f31c 0%, #acdb34 4%, #8fbb21 7%, #4a5e18 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #b6f31c 0%, #acdb34 4%, #8fbb21 7%, #4a5e18 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.isolation {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #6af31c 0%, #71db34 4%, #59bb21 7%, #315e18 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #6af31c 0%, #71db34 4%, #59bb21 7%, #315e18 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.brain {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1ef31c 0%, #36db34 4%, #23bb21 7%, #185e18 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1ef31c 0%, #36db34 4%, #23bb21 7%, #185e18 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.cosmology {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf366 0%, #34db6d 4%, #21bb56 7%, #185e30 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf366 0%, #34db6d 4%, #21bb56 7%, #185e30 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.religion {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf3b1 0%, #34dba8 4%, #21bb8c 7%, #185e49 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1cf3b1 0%, #34dba8 4%, #21bb8c 7%, #185e49 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 body.intelligence {
-  background: #1a1304;
-  background-image: url(../img/broken-noise.png), radial-gradient(ellipse farthest-corner at 103vw 2vh, #1ce9f3 0%, #34d3db 4%, #21b3bb 7%, #185b5e 15%, #0c161d 30%, #1a1304 95%);
-  background-repeat: repeat;
-  transition: background-color 1s;
+  background: radial-gradient(ellipse farthest-corner at 103vw 2vh, #1ce9f3 0%, #34d3db 4%, #21b3bb 7%, #185b5e 15%, #0c161d 30%, #1a1304 95%);
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 }
 
 #quote_table tbody tr td.quote date.ignorance {
@@ -157,11 +128,19 @@ body.intelligence {
   height: 100%;
   max-height: 100%;
   margin: 0;
+  background-image: url(../img/broken-noise.png);
+  background-repeat: repeat;
 }
-@media (min-width: 64em) {
+@media (max-width: 37.5em) {
   .viewport {
-    width: 60%;
-    padding: 0 40% 0 0;
+    width: 90%;
+    padding: 0 10% 0 0;
+  }
+}
+@media (min-width: 37.5em) {
+  .viewport {
+    width: 80%;
+    padding: 0 20% 0 0;
   }
 }
 @media (min-width: 50em) {
@@ -170,10 +149,10 @@ body.intelligence {
     padding: 0 30% 0 0;
   }
 }
-@media (max-width: 37.5em) {
+@media (min-width: 64em) {
   .viewport {
-    width: 90%;
-    padding: 0 10% 0 0;
+    width: 60%;
+    padding: 0 40% 0 0;
   }
 }
 
@@ -196,7 +175,7 @@ body.intelligence {
   height: 100%;
   background-color: #333;
   -webkit-clip-path: url(#svgPath);
-          clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
 }
 
 #loader.active span#progess-bar {
@@ -250,7 +229,9 @@ body.intelligence {
   float: left;
   text-transform: uppercase;
   text-align: right;
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  -ms-transform-origin: right bottom 0;
   transform-origin: right bottom 0;
 }
 @media (max-width: 37.5em) {
@@ -278,7 +259,7 @@ body.intelligence {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   z-index: 5;
   font-family: sans-serif;
   text-align: center;
@@ -333,11 +314,11 @@ body.intelligence {
   z-index: 1;
   border: 1px solid rgba(229, 236, 251, 0.05);
 }
-@media (max-width: 37.5em) {
+@media (min-width: 64em) {
   #timer-bar svg.progress-circle {
-    width: 35px;
-    height: 35px;
-    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
   }
 }
 @media (min-width: 50em) {
@@ -347,11 +328,18 @@ body.intelligence {
     border-radius: 50px;
   }
 }
-@media (min-width: 64em) {
+@media (max-width: 37.5em) {
   #timer-bar svg.progress-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+  }
+}
+@media (min-width: 37.5em) {
+  #timer-bar svg.progress-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
   }
 }
 
@@ -362,9 +350,10 @@ body.intelligence {
   border-left: 1px solid rgba(229, 236, 251, 0.05);
   z-index: 10;
 }
-@media (min-width: 64em) {
+@media (max-width: 37.5em) {
   #auto-scroll {
-    width: 60%;
+    width: 84%;
+    margin-left: 8px;
   }
 }
 @media (min-width: 50em) {
@@ -372,10 +361,9 @@ body.intelligence {
     width: 70%;
   }
 }
-@media (max-width: 37.5em) {
+@media (min-width: 64em) {
   #auto-scroll {
-    width: 84%;
-    margin-left: 8px;
+    width: 60%;
   }
 }
 
@@ -420,13 +408,13 @@ body.intelligence {
     min-width: 80px;
   }
 }
-@media (min-width: 50em) {
-  #auto-scroll table#quote_table .line_count {
-    min-width: 40px;
-  }
-}
 @media (max-width: 37.5em) {
   #auto-scroll table#quote_table .line_count {
     display: none;
+  }
+}
+@media (min-width: 50em) {
+  #auto-scroll table#quote_table .line_count {
+    min-width: 40px;
   }
 }

@@ -22,7 +22,19 @@ body {
   color: #fff;
   color: $font-color;
   font-family: sans-serif;
-  transition: background-color 1s;
+  overflow: hidden;
+  transition: background 2s cubic-bezier(0, 0, 1, -0.1);
+
+  background: $bg-color;
+  background: radial-gradient( ellipse farthest-corner at 103vw 2vh,
+                saturate($accent-color, 20%) 0%,
+                $accent-color 4%,
+                darken( $accent-color, 10%) 7%,
+                darken( desaturate( $accent-color, 10%), 30% ) 15%,
+                darken( desaturate( $accent-color, 30% ), 45% ) 30%,
+                $bg-color 95%
+              );
+
   box-shadow: inset $bg-color 0 0 4vw;
 
   @for $i from 1 to (length($themes-class) + 1) {
@@ -33,19 +45,15 @@ body {
 
     &.#{$class} {
 
-      background: $bg-color;
-      background-image: url( ../img/broken-noise.png ),
-                        radial-gradient( ellipse farthest-corner at 103vw 2vh,
-                        saturate($color, 20%) 0%,
-                        $color 4%,
-                        darken( $color, 10%) 7%,
-                        darken( desaturate( $color, 10%), 30% ) 15%,
-                        darken( desaturate( $accent-color, 30% ), 45% ) 30%,
-                        $bg-color 95%);
-      background-repeat: repeat;
-      transition: background-color 1s;
-
-
+      background: radial-gradient( ellipse farthest-corner at 103vw 2vh,
+                    saturate($color, 20%) 0%,
+                    $color 4%,
+                    darken( $color, 10%) 7%,
+                    darken( desaturate( $color, 10%), 30% ) 15%,
+                    darken( desaturate( $accent-color, 30% ), 45% ) 30%,
+                    $bg-color 95%
+                  );
+      transition: background 2s cubic-bezier(0, 0, 1, -0.1);
     }
   }
 }
@@ -68,11 +76,17 @@ body {
   height: 100%;
   max-height: 100%;
   margin: 0;
+  background-image: url( ../img/broken-noise.png );
+  background-repeat: repeat;
 
+  @include breakpoint( mobileonly ) {
+    width: 90%;
+    padding: 0 10% 0 0;
+  }
 
-  @include breakpoint( laptop ) {
-    width: 60%;
-    padding: 0 40% 0 0;
+  @include breakpoint( phablet ) {
+    width: 80%;
+    padding: 0 20% 0 0;
   }
 
   @include breakpoint( tablet ) {
@@ -80,9 +94,9 @@ body {
     padding: 0 30% 0 0;
   }
 
-  @include breakpoint( mobileonly ) {
-    width: 90%;
-    padding: 0 10% 0 0;
+  @include breakpoint( laptop ) {
+    width: 60%;
+    padding: 0 40% 0 0;
   }
 }
 
@@ -171,8 +185,6 @@ body {
       line-height: 3em;
     }
 
-
-
     width: 70vh;
     letter-spacing: 3px;
 
@@ -186,6 +198,7 @@ body {
   #quotes-count {
     display: flex;
     justify-content: flex-end;
+
     @include breakpoint( mobileonly ) {
       width: 30px;
       height: 30px;
@@ -232,10 +245,11 @@ body {
   }
   svg.progress-circle {
     display: block;
-    @include breakpoint( mobileonly ) {
-      width: 35px;
-      height: 35px;
-      border-radius: 35px;
+    
+    @include breakpoint( laptop ) {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
     }
 
     @include breakpoint( tablet ) {
@@ -244,10 +258,16 @@ body {
       border-radius: 50px;
     }
 
-    @include breakpoint( laptop ) {
-      width: 70px;
-      height: 70px;
-      border-radius: 70px;
+    @include breakpoint( mobileonly ) {
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+    }
+
+    @include breakpoint( phablet ) {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
     }
 
     margin: -1px;
@@ -270,17 +290,18 @@ body {
   bottom: 0;
   border-left: 1px solid transparentize(invert($bg-color), .95);
   z-index: 10;
-  @include breakpoint( laptop ) {
-    width: 60%;
+
+  @include breakpoint( mobileonly ) {
+    width: 84%;
+    margin-left: 8px;
   }
 
   @include breakpoint( tablet ) {
     width: 70%;
   }
 
-  @include breakpoint( mobileonly ) {
-    width: 84%;
-    margin-left: 8px;
+  @include breakpoint( laptop ) {
+    width: 60%;
   }
 
 }
@@ -317,18 +338,18 @@ body {
   }
   .line_count {
     display: block;
+
     @include breakpoint( laptop ) {
       min-width: 80px;
-    }
-
-    @include breakpoint( tablet ) {
-      min-width: 40px;
     }
 
     @include breakpoint( mobileonly ) {
       display: none;
     }
 
+    @include breakpoint( tablet ) {
+      min-width: 40px;
+    }
 
     color: transparentize( $accent-color, .7);
     margin-right: 1em;

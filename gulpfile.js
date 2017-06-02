@@ -1,29 +1,32 @@
-var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cssnano = require('gulp-cssnano'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
-    del = require('del'),
-    watch = require('gulp-watch'),
-    sourcemaps = require('gulp-sourcemaps'),
-    ignore = require('gulp-ignore'),
-    zip = require('gulp-zip'),
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+const gulp = require('gulp');
+const sass = require('gulp-ruby-sass'),
+      autoprefixer = require('gulp-autoprefixer'),
+      cssnano = require('gulp-cssnano'),
+      uglify = require('gulp-uglify'),
+      imagemin = require('gulp-imagemin'),
+      rename = require('gulp-rename'),
+      concat = require('gulp-concat'),
+      notify = require('gulp-notify'),
+      cache = require('gulp-cache'),
+      del = require('del'),
+      watch = require('gulp-watch'),
+      sourcemaps = require('gulp-sourcemaps'),
+      ignore = require('gulp-ignore'),
+      zip = require('gulp-zip'),
+      browserSync = require('browser-sync'),
+      reload = browserSync.reload;
 
 gulp.task('styles', function() {
   return sass('dev/sass/**.scss', { style: 'expanded' })
     .pipe(sourcemaps.init())
-    .pipe(autoprefixer('last 2 version'))
+    .pipe(autoprefixer({
+      browsers : ['last 3 version'],
+      cascade: false
+    }))
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'SASS processing minifying and complete' }));
 });
