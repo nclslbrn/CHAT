@@ -1,6 +1,6 @@
 /*
-Part of the memories Project (https://memories.artemg.com/)
-Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
 */
 var current_theme = '';
 var quotes_count = 0;

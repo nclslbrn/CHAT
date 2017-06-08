@@ -1,4 +1,8 @@
 <?php
+/*
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
+*/
 /**
  * An array of Isaac Asimov quotes
  * @param $quotes['alain-damasio']['theme'] = a category to store/find quote
@@ -80,7 +84,7 @@ Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intang
   ),
   array(
     "theme" => "brain",
-    "text"  => "Réfléchir, c’est fléchir deux fois."
+    "text"  => "Réfléchir, c’est réfléchir deux fois."
   ),
   array(
     "theme" => "will",

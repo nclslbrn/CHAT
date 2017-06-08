@@ -1,7 +1,7 @@
 <?php
 /*
-Part of the memories Project (https://memories.artemg.com/)
-Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
 */
 
 include_once('functions.php');
@@ -15,6 +15,7 @@ include_once('_alain-damasio.php');
 include_once('_heraclite-d-ephese.php');
 include_once('_michel-foucault.php');
 include_once('_nicolas-tesla.php');
+include_once('_aaron-schwartz.php');
 include_once('_linus-torvalds.php');
 include_once('_alan-turing.php');
 

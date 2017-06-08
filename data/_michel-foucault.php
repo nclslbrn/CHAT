@@ -1,4 +1,8 @@
 <?php
+/*
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
+*/
 /**
  * An array of Michel Foucault quotes
  * @param $quotes['michel-foucault']['theme'] = a category to store/find quote

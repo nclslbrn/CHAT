@@ -1,4 +1,8 @@
 <?php
+/*
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
+*/
 /**
  * An array of Isaac Asimov quotes
  * @param $quotes['linus-torvalds']['theme'] = a category to store/find quote
