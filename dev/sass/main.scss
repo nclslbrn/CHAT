@@ -26,7 +26,7 @@ body {
   transition: background 2s cubic-bezier(0, 0, 1, -0.1);
 
   background: $bg-color;
-  background: radial-gradient( ellipse farthest-corner at 103vw 2vh,
+  background: radial-gradient( circle at 103vw 2vh,
                 saturate($accent-color, 20%) 0%,
                 $accent-color 4%,
                 darken( $accent-color, 10%) 7%,
@@ -45,7 +45,7 @@ body {
 
     &.#{$class} {
 
-      background: radial-gradient( ellipse farthest-corner at 103vw 2vh,
+      background: radial-gradient( circle at 103vw 2vh,
                     saturate($color, 20%) 0%,
                     $color 4%,
                     darken( $color, 10%) 7%,
@@ -53,7 +53,6 @@ body {
                     darken( desaturate( $accent-color, 30% ), 45% ) 30%,
                     $bg-color 95%
                   );
-      transition: background 2s cubic-bezier(0, 0, 1, -0.1);
     }
   }
 }
@@ -161,7 +160,8 @@ body {
     right: 8px;
     bottom: 8px;
   }
-  .theme {
+  #current-theme {
+
     display: block;
     position: absolute;
     top: 0;
@@ -193,7 +193,38 @@ body {
     text-transform: uppercase;
     text-align: right;
     transform: rotate(-90deg);
-	  transform-origin: right bottom 0;
+    transform-origin: right bottom 0;
+    animation: disappear 1s linear;
+    animation-iteration-count: 1;
+
+    .theme {
+      position: absolute;
+      width: 100%;
+    }
+    &.glitched{
+
+      .theme:nth-child(1) {
+        animation: disappear .25s linear, noise_1 .2s linear;
+  			animation-iteration-count: 1;
+      }
+      .theme:nth-child(2) {
+        top: 1px;
+        left: 1px;
+        color: transparentize(blue, .2);
+        z-index: -1;
+        animation: animate_glitch_2 .25s linear, noise_3 .5s linear;
+  			animation-iteration-count: 1;
+      }
+      .theme:nth-child(3) {
+        top: -1px;
+        left: -1px;
+        color: transparentize(red, .4);
+        z-index: -1;
+        animation: animate_glitch_1 .25s linear, noise_3 .5s linear;
+  			animation-iteration-count: 1;
+      }
+    }
+
   }
   #quotes-count {
     display: flex;
@@ -206,7 +237,11 @@ body {
       line-height: 30px;
       font-size: .5em;
     }
-
+    @include breakpoint( phablet ) {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
     @include breakpoint( tablet ) {
       width: 40px;
       height: 40px;
@@ -214,7 +249,7 @@ body {
       line-height: 40px;
       font-size: .8em;
     }
-    @include breakpoint( desktop ) {
+    @include breakpoint( laptop ) {
       width: 60px;
       height: 60px;
       margin: 4px;
@@ -245,30 +280,29 @@ body {
   }
   svg.progress-circle {
     display: block;
-    
-    @include breakpoint( laptop ) {
-      width: 70px;
-      height: 70px;
-      border-radius: 70px;
-    }
-
-    @include breakpoint( tablet ) {
-      width: 50px;
-      height: 50px;
-      border-radius: 50px;
-    }
 
     @include breakpoint( mobileonly ) {
       width: 35px;
       height: 35px;
       border-radius: 35px;
     }
-
     @include breakpoint( phablet ) {
       width: 40px;
       height: 40px;
       border-radius: 40px;
     }
+    @include breakpoint( tablet ) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+    }
+    @include breakpoint( laptop ) {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+    }
+
+
 
     margin: -1px;
     fill: rgba(0,0,0,0);
@@ -282,7 +316,50 @@ body {
 
   }
 }
+@keyframes disappear {
+	0% {	opacity: 0;	}
+	2% { opacity: 1; }
+}
+@keyframes animate_glitch_1 {
+  0% { top: 1px; left: 1px; }
+ 	25% { top: 3px; left: 2px;	 }
+	50% { top: -1px; left: -4px;	}
+ 	75% { top: 2px; left: 5px;	}
+	100% {	top: 1px; left: -2px;	}
+}
 
+@keyframes animate_glitch_2 {
+  0% { top: -1px; left: -1px;	}
+	25% { top: -3px; left: -2px;	}
+	50% { top: 1px; left: 4px; }
+  100% { top: -1px; left: -1px; }
+}
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise_1 {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+@keyframes noise_2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise_3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
 
 #auto-scroll {
   position: absolute;

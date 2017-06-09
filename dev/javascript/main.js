@@ -52,8 +52,6 @@ function add_quote(i, item, length, author) {
 
   $(content).appendTo("#quote_table tbody").hide().fadeIn();
   add_line_number('#' + quote_id );
-  //console.log( 'quotes_count: ' + quotes_count );
-  //console.log( 'line_count: ' + lines_count );
 }
 
 function chat_reader( quotes, n ) {
@@ -132,11 +130,15 @@ function query() {
 
   load_quotes( function( quotes ){
 
+    $('#timer-bar #current-theme').removeClass('glitched');
+
     var n = 0;
 
     themes_already_used = quotes.themes;
     current_theme = themes_already_used[themes_already_used.length - 1];
-    $('#timer-bar .theme').html( current_theme );
+    var html_theme = '<div class=\'theme\'>' + current_theme + '</div>';
+    $('#timer-bar #current-theme').html( html_theme + html_theme + html_theme);
+    $('#timer-bar #current-theme').addClass('glitched');
     $('body').removeClass();
     $('body').addClass( current_theme );
     chat_reader( quotes.texts, n, themes_already_used );

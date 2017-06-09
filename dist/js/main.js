@@ -1,6 +1,6 @@
 /*
-Part of the memories Project (https://memories.artemg.com/)
-Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://memories.artemg.com/LICENSE).
+Part of the AVATARS Project (https://avatars.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
 */
 var current_theme = '';
 var quotes_count = 0;
@@ -10,7 +10,7 @@ var themes_already_used = [];
 function add_line_number(quote_id) {
 
   var height = $(quote_id).height();
-  //var line_height = $(quote_id + ' .quote').css('line_height');
+  //var line_height = $(quote_id + ' .quote').css('line_height'); // doesn't work
   var line_height = 32; // )-: HARDCODE = SHAME (this &@!‰#¥Ô removes resonsive rule with line-height property)
   var lines = Math.round( height / line_height );
 
@@ -44,16 +44,14 @@ function add_quote(i, item, length, author) {
   quotes_count++;
   var quote_id = 'quote_' + quotes_count;
   var date = new Date();
-  var hours = (("" + date.getHours()).length < 2 ? "0" : "") + date.getHours();
-  var minutes = (("" + date.getMinutes()).length < 2 ? "0" : "") + date.getMinutes();
-  var seconds = (("" + date.getSeconds()).length < 2 ? "0" : "") + date.getSeconds();
+  var hours = (("" + date.getHours()).length < 2 ? "0": "") + date.getHours();
+  var minutes = (("" + date.getMinutes()).length < 2 ? "0": "") + date.getMinutes();
+  var seconds = (("" + date.getSeconds()).length < 2 ? "0": "") + date.getSeconds();
   var footer = '<br /><date class=\''+ current_theme + '\'>[' + hours + ':' + minutes + ':' + seconds + ']</date><author>'+ author +'</author>';
   var content = '<tr id=\'' + quote_id + '\'><td class=\'line_count\'></td><td class=\'quote ' + text_size + '\'>' + item + footer + '<br /><br /></td></tr>';
 
   $(content).appendTo("#quote_table tbody").hide().fadeIn();
   add_line_number('#' + quote_id );
-  //console.log( 'quotes_count: ' + quotes_count );
-  //console.log( 'line_count: ' + lines_count );
 }
 
 function chat_reader( quotes, n ) {
@@ -132,11 +130,15 @@ function query() {
 
   load_quotes( function( quotes ){
 
+    $('#timer-bar #current-theme').removeClass('glitched');
+
     var n = 0;
 
     themes_already_used = quotes.themes;
     current_theme = themes_already_used[themes_already_used.length - 1];
-    $('#timer-bar .theme').html( current_theme );
+    var html_theme = '<div class=\'theme\'>' + current_theme + '</div>';
+    $('#timer-bar #current-theme').html( html_theme + html_theme + html_theme);
+    $('#timer-bar #current-theme').addClass('glitched');
     $('body').removeClass();
     $('body').addClass( current_theme );
     chat_reader( quotes.texts, n, themes_already_used );

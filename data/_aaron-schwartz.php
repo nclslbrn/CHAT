@@ -64,7 +64,7 @@ $quotes['aaron-schartz'] = array(
   ),
   array(
     "theme" => "nature",
-    "text"  => "Les grandes entreprises, bien sûr, sont aveuglées par la cupidité. Les lois en vertu desquelles ils fonctionnent exigent que leurs actionnaires se révolteraient à tout autre chose."
+    "text"  => "Les grandes entreprises, bien sûr, sont aveuglées par la cupidité. Les lois en vertu desquelles elles fonctionnent exigent que leurs actionnaires se révolteraient à tout autre chose."
   ),
   array(
     "theme" => "will",
