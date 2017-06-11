@@ -14,6 +14,7 @@ include_once('_isaac-asimov.php');
 include_once('_alain-damasio.php');
 include_once('_heraclite-d-ephese.php');
 include_once('_michel-foucault.php');
+include_once('_ada-lovelace.php');
 include_once('_nicolas-tesla.php');
 include_once('_aaron-schwartz.php');
 include_once('_linus-torvalds.php');

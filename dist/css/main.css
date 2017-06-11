@@ -63,47 +63,121 @@ body.intelligence {
 #quote_table tbody tr td.quote date.ignorance {
   color: #345ddb;
 }
+
+body.ignorance #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #122664;
+}
+
 #quote_table tbody tr td.quote date.ideas {
   color: #4634db;
 }
+
+body.ideas #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #1b1264;
+}
+
 #quote_table tbody tr td.quote date.justice {
   color: #8134db;
 }
+
+body.justice #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #381264;
+}
+
 #quote_table tbody tr td.quote date.violence {
   color: #bc34db;
 }
+
+body.violence #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #551264;
+}
+
 #quote_table tbody tr td.quote date.nature {
   color: #db34bf;
 }
+
+body.nature #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #641257;
+}
+
 #quote_table tbody tr td.quote date.epistemology {
   color: #db3484;
 }
+
+body.epistemology #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #641239;
+}
+
 #quote_table tbody tr td.quote date.will {
   color: #db3449;
 }
+
+body.will #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #64121c;
+}
+
 #quote_table tbody tr td.quote date.power {
   color: #db5a34;
 }
+
+body.power #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #642412;
+}
+
 #quote_table tbody tr td.quote date.be {
   color: #db9434;
 }
+
+body.be #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #644112;
+}
+
 #quote_table tbody tr td.quote date.liberty {
   color: #dbcf34;
 }
+
+body.liberty #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #645f12;
+}
+
 #quote_table tbody tr td.quote date.physics {
   color: #acdb34;
 }
+
+body.physics #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #4d6412;
+}
+
 #quote_table tbody tr td.quote date.isolation {
   color: #71db34;
 }
+
+body.isolation #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #306412;
+}
+
 #quote_table tbody tr td.quote date.brain {
   color: #36db34;
 }
+
+body.brain #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #136412;
+}
+
 #quote_table tbody tr td.quote date.cosmology {
   color: #34db6d;
 }
+
+body.cosmology #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #12642e;
+}
+
 #quote_table tbody tr td.quote date.religion {
   color: #34dba8;
+}
+
+body.religion #timer-bar #current-theme .theme {
+  text-shadow: 1px 1px 0 #12644b;
 }
 
 .viewport {
@@ -247,7 +321,7 @@ body.intelligence {
 }
 #timer-bar #current-theme.glitched .theme:nth-child(1) {
   animation: disappear .25s linear, noise_1 .2s linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
 }
 #timer-bar #current-theme.glitched .theme:nth-child(2) {
   top: 1px;
@@ -255,7 +329,7 @@ body.intelligence {
   color: rgba(0, 0, 255, 0.8);
   z-index: -1;
   animation: animate_glitch_2 .25s linear, noise_3 .5s linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
 }
 #timer-bar #current-theme.glitched .theme:nth-child(3) {
   top: -1px;
@@ -263,7 +337,7 @@ body.intelligence {
   color: rgba(255, 0, 0, 0.6);
   z-index: -1;
   animation: animate_glitch_1 .25s linear, noise_3 .5s linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
 }
 #timer-bar #quotes-count {
   display: -ms-flexbox;

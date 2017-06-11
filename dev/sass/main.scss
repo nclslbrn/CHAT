@@ -57,18 +57,21 @@ body {
   }
 }
 
-#quote_table tbody tr td.quote date {
-  @for $i from 1 to length($themes-class) {
 
-    $deg: $hue-increment * $i;
-    $class: unquote( nth($themes-class, $i));
-    $color: adjust-hue( $accent-color, $deg);
+@for $i from 1 to length($themes-class) {
 
-    &.#{$class} {
-      color: $color;
-    }
+  $deg: $hue-increment * $i;
+  $class: unquote( nth($themes-class, $i));
+  $color: adjust-hue( $accent-color, $deg);
+
+  #quote_table tbody tr td.quote date.#{$class} {
+    color: $color;
+  }
+  body.#{$class} #timer-bar #current-theme .theme {
+    text-shadow: 1px 1px 0 darken($color, 30%);
   }
 }
+
 .viewport {
   position: relative;
   display: block;
@@ -205,7 +208,7 @@ body {
 
       .theme:nth-child(1) {
         animation: disappear .25s linear, noise_1 .2s linear;
-  			animation-iteration-count: 1;
+  			animation-iteration-count: 3;
       }
       .theme:nth-child(2) {
         top: 1px;
@@ -213,7 +216,7 @@ body {
         color: transparentize(blue, .2);
         z-index: -1;
         animation: animate_glitch_2 .25s linear, noise_3 .5s linear;
-  			animation-iteration-count: 1;
+  			animation-iteration-count: 3;
       }
       .theme:nth-child(3) {
         top: -1px;
@@ -221,7 +224,7 @@ body {
         color: transparentize(red, .4);
         z-index: -1;
         animation: animate_glitch_1 .25s linear, noise_3 .5s linear;
-  			animation-iteration-count: 1;
+  			animation-iteration-count: 3;
       }
     }
 
@@ -302,8 +305,6 @@ body {
       border-radius: 70px;
     }
 
-
-
     margin: -1px;
     fill: rgba(0,0,0,0);
     stroke: $accent-color;
@@ -313,7 +314,6 @@ body {
     z-index: 1;
 
     border: 1px solid transparentize(invert($bg-color), .95);
-
   }
 }
 @keyframes disappear {
@@ -397,7 +397,6 @@ body {
   hyphens: auto;
 
   white-space: pre-line;
-
 
   tbody tr { display: table; }
   tbody tr td { display: table-cell; vertical-align: top; }
