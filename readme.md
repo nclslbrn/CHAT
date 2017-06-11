@@ -2,14 +2,15 @@
 ![drawings](https://raw.githubusercontent.com/nclslbrn/avatars/master/dev/images/memories-contrast.png)
 
 A generated chat with quotes by:
-- Isaac Asimov
-- Alain Damasio
-- Héraclite d'Ephèse
-- Michel Foucault
-- Nicolas Tesla
-- Aaron Schwartz
-- Linus Torvalds
-- Alan Turing
+- Isaac ASIMOV
+- Alain DAMASIO
+- Héraclite d'EPHÈSE
+- Michel FOUCAULT
+- Ada LOVELACE
+- Nicolas TESLA
+- Aaron SCHWARTZ
+- Linus TORVALDS
+- Alan TURING
 - ...
 
 Demo [here](https://avatars.artemg.com/ "Avatars: Demo")
