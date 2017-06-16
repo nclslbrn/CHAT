@@ -13,13 +13,12 @@
     "del": "^2.2.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.4.2",
     "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.1.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
@@ -36,7 +35,8 @@
   },
   "keywords": [
     "javascript",
-    "quotes"
+    "quotes",
+    "internet 1.0 vs intenet 2.0"
   ],
   "author": "Nicolas Lebrun",
   "license": "MIT",

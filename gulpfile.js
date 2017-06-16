@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    cssnano = require('gulp-cssnano'),
+    cleanCSS = require('gulp-clean-css');
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -24,22 +24,20 @@ var COMPATIBILITY = [
 
 gulp.task('styles', function() {
   return gulp
-    .src('dev/sass/**.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(autoprefixer({
-      browsers : COMPATIBILITY,
-      cascade: false
-    }))
+    .src('dev/sass/main.scss')
+    //.pipe(sourcemaps.init())
+    .pipe(sass({errLogToConsole: true}))
+    //.pipe(sourcemaps.write({includeContent: false, sourceRoot: '.'}))
+    //.pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(autoprefixer({browsers: ['last 2 versions', 'ie >= 9', 'Android >= 2.3', 'iOS 6'], cascade: false}))
+    //
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano())
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS({compatibility: 'ie9'}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/css'))
-    .pipe(notify({ message: 'SASS processing minifying and complete' }));
-
-    var info = autoprefixer().info();
-    console.log(info);
+    .pipe(notify({ message: 'SASS processing and minifying complete' }));
 });
 
 gulp.task('scripts', function() {

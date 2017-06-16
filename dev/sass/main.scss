@@ -365,7 +365,7 @@ body {
   position: absolute;
   width: inherit;
   bottom: 0;
-  border-left: 1px solid transparentize(invert($bg-color), .95);
+
   z-index: 10;
 
   @include breakpoint( mobileonly ) {
@@ -375,10 +375,12 @@ body {
 
   @include breakpoint( tablet ) {
     width: 70%;
+    border-left: 1px solid transparentize(invert($bg-color), .95);
   }
 
   @include breakpoint( laptop ) {
     width: 60%;
+    border-left: 1px solid transparentize(invert($bg-color), .95);
   }
 
 }
