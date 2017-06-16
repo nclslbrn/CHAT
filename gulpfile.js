@@ -1,34 +1,45 @@
-const gulp = require('gulp');
-const sass = require('gulp-ruby-sass'),
-      autoprefixer = require('gulp-autoprefixer'),
-      cssnano = require('gulp-cssnano'),
-      uglify = require('gulp-uglify'),
-      imagemin = require('gulp-imagemin'),
-      rename = require('gulp-rename'),
-      concat = require('gulp-concat'),
-      notify = require('gulp-notify'),
-      cache = require('gulp-cache'),
-      del = require('del'),
-      watch = require('gulp-watch'),
-      sourcemaps = require('gulp-sourcemaps'),
-      ignore = require('gulp-ignore'),
-      zip = require('gulp-zip'),
-      browserSync = require('browser-sync'),
-      reload = browserSync.reload;
+var gulp = require('gulp');
+var sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano'),
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    notify = require('gulp-notify'),
+    cache = require('gulp-cache'),
+    del = require('del'),
+    watch = require('gulp-watch'),
+    sourcemaps = require('gulp-sourcemaps'),
+    ignore = require('gulp-ignore'),
+    zip = require('gulp-zip'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
+
+var COMPATIBILITY = [
+  'last 2 versions',
+  'ie >= 9',
+  'Android >= 2.3'
+];
 
 gulp.task('styles', function() {
-  return sass('dev/sass/**.scss', { style: 'expanded' })
+  return gulp
+    .src('dev/sass/**.scss')
     .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(autoprefixer({
-      browsers : ['last 3 version'],
+      browsers : COMPATIBILITY,
       cascade: false
     }))
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'SASS processing minifying and complete' }));
+
+    var info = autoprefixer().info();
+    console.log(info);
 });
 
 gulp.task('scripts', function() {
@@ -95,3 +106,5 @@ gulp.task('build', function() {
   	.pipe(notify({ message: 'Zip task complete', onLast: true }));
 
 });
+
+gulp.task('default',['watch']);
