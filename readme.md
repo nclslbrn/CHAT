@@ -1,5 +1,5 @@
 # Part of the CHAT Project
-![drawings](https://raw.githubusercontent.com/nclslbrn/CHAT/master/dev/images/memories-contrast.png)
+![drawings](https://github.com/nclslbrn/CHAT/blob/master/dev/images/chat-protagonistes.png?raw=true)
 
 A generated chat with quotes by:
 - Isaac ASIMOV
