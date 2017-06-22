@@ -1,5 +1,5 @@
-# Part of the AVATARS Project
-![drawings](https://raw.githubusercontent.com/nclslbrn/avatars/master/dev/images/memories-contrast.png)
+# Part of the CHAT Project
+![drawings](https://raw.githubusercontent.com/nclslbrn/CHAT/master/dev/images/memories-contrast.png)
 
 A generated chat with quotes by:
 - Isaac ASIMOV
@@ -13,7 +13,7 @@ A generated chat with quotes by:
 - Alan TURING
 - ...
 
-Demo [here](https://avatars.artemg.com/ "Avatars: Demo")
+Demo [here](https://CHAT.artemg.com/ "CHAT: Demo")
 
 ## How it works ?
 

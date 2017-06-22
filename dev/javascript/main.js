@@ -1,6 +1,6 @@
 /*
-Part of the AVATARS Project (https://avatars.artemg.com/)
-Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
+Part of the CHAT Project (https://CHAT.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LICENSE).
 */
 var current_theme = '';
 var quotes_count = 0;

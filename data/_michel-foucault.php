@@ -1,7 +1,7 @@
 <?php
 /*
-Part of the AVATARS Project (https://avatars.artemg.com/)
-Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://avatars.artemg.com/LICENSE).
+Part of the CHAT Project (https://CHAT.artemg.com/)
+Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LICENSE).
 */
 /**
  * An array of Michel Foucault quotes
