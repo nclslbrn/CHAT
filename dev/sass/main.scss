@@ -1,5 +1,9 @@
 @import "../../node_modules/plumber-sass/plumber";
 @import "mixins";
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../fonts/robotomono-regular-webfont.woff') format("woff");
+}
 
 $font-color: #fefefe;
 $blockquote-font: 'Roboto Mono', monospace;

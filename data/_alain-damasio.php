@@ -36,7 +36,7 @@ Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intang
   ),
   array(
     "theme" => "be",
-    "text"  => "À mes yeux, l'art est une réponse étrange et puissante à la question: qu'es-ce qu'être en vie."
+    "text"  => "À mes yeux, l'art est une réponse étrange et puissante à la question: qu'est-ce qu'être en vie?"
   ),
   array(
     "theme" => "will",

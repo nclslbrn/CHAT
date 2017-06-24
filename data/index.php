@@ -21,7 +21,8 @@ include_once('_linus-torvalds.php');
 include_once('_alan-turing.php');
 
 if( !empty( $_GET['chat']) ) {
-
+  
+  header('Content-Type: application/json');
   $op = $_GET['chat'];
 
   switch( $op ) {
