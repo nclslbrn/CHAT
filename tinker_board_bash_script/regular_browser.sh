@@ -1,0 +1,1 @@
+firefox -safe-mode
