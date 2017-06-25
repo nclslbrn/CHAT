@@ -179,8 +179,8 @@ body.religion #timer-bar #current-theme .theme {
       padding: 0 30% 0 0; } }
   @media (min-width: 64em) {
     .viewport {
-      width: 60%;
-      padding: 0 40% 0 0; } }
+      width: 70%;
+      padding: 0 30% 0 0; } }
 
 #loader {
   position: absolute;
@@ -235,7 +235,7 @@ body.religion #timer-bar #current-theme .theme {
       width: 29.8%; } }
   @media (min-width: 64em) {
     #timer-bar {
-      width: 39.8%; } }
+      width: 29.8%; } }
   #timer-bar #quotes-count,
   #timer-bar .progress-circle {
     position: absolute;
