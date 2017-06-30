@@ -73,6 +73,9 @@ body {
   }
   body.#{$class} #timer-bar #current-theme .theme {
     text-shadow: 1px 1px 0 darken($color, 30%);
+		&:nth-child(1) {
+			color: darken($color, 10%);
+		}
   }
 }
 
@@ -101,8 +104,8 @@ body {
   }
 
   @include breakpoint( laptop ) {
-    width: 70%;
-    padding: 0 30% 0 0;
+    width: 80%;
+    padding: 0 20% 0 0;
   }
 }
 
@@ -153,7 +156,7 @@ body {
   }
 
   @include breakpoint( laptop ) {
-    width: 29.8%;
+    width: 19.8%;
   }
 
   top: 0;
@@ -211,6 +214,7 @@ body {
     &.glitched{
 
       .theme:nth-child(1) {
+				color: #333;
         animation: disappear .25s linear, noise_1 .2s linear;
   			animation-iteration-count: 3;
       }
@@ -383,7 +387,7 @@ body {
   }
 
   @include breakpoint( laptop ) {
-    width: 60%;
+    width: 80%;
     border-left: 1px solid transparentize(invert($bg-color), .95);
   }
 
