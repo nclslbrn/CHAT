@@ -11,7 +11,6 @@ A generated chat with quotes by:
 - Aaron SCHWARTZ
 - Linus TORVALDS
 - Alan TURING
-- ...
 
 Demo [here](https://CHAT.artemg.com/ "CHAT: Demo")
 
