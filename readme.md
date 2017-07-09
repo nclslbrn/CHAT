@@ -8,7 +8,7 @@ A generated chat with quotes by:
 - Michel FOUCAULT
 - Ada LOVELACE
 - Nicolas TESLA
-- Aaron SCHWARTZ
+- Aaron SWARTZ
 - Linus TORVALDS
 - Alan TURING
 

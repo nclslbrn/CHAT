@@ -5,11 +5,11 @@ Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LIC
 */
 
 /**
- * An array of Aaron Schartz quotes
- * @param $quotes['aaron-schartz']['theme'] = a category to store/find quote
- * @param $quotes['aaron-schartz']['text'] = the text of the quote
+ * An array of Aaron Swartz quotes
+ * @param $quotes['aaron-swartz']['theme'] = a category to store/find quote
+ * @param $quotes['aaron-swartz']['text'] = the text of the quote
  */
-$quotes['aaron-schartz'] = array(
+$quotes['aaron-swartz'] = array(
   array(
     "theme" => "ignorance",
     "text"  => "Partager la connaissance n'a rien à voir avec le fait de piller un bateau et assassiner son équipage, c'est un impératif moral."

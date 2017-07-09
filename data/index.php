@@ -21,14 +21,14 @@ include_once('_linus-torvalds.php');
 include_once('_alan-turing.php');
 
 if( !empty( $_GET['chat']) ) {
-  
-  header('Content-Type: application/json');
+
+
   $op = $_GET['chat'];
 
   switch( $op ) {
 
     case 'query':
-
+      header('Content-Type: application/json');
       $themes = get_themes( $quotes );
 
       if( !empty($_GET['themes']) ){
@@ -73,6 +73,7 @@ if( !empty( $_GET['chat']) ) {
       break;
 
     case 'dev':
+      header("Content-Type: text/html");
       $themes = get_themes( $quotes );
       $total_quotes = 0;
       echo '<ul style=\'list-style-type: decimal-leading-zero;\'>';
