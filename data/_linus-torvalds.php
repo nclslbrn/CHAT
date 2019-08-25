@@ -12,7 +12,7 @@ Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LIC
 $quotes['linus-torvalds'] = array(
   array(
     "theme" => "ideas",
-    "text"  => "J'ai toujours raison. Cette fois j'ai simplement encore plus raison que d'habitude."
+    "text"  => "J'ai toujours raison. Cette fois, j'ai simplement encore plus raison que d'habitude."
   ),
   array(
     "theme" => "religion",
@@ -20,7 +20,7 @@ $quotes['linus-torvalds'] = array(
   ),
   array(
     "theme" => "power",
-    "text"  => "Je ne pense pas que certaines failles de sécurité spectaculaires devraient être glorifiées ou traitées comme étant plus ”spéciales” qu'un accident aléatoire dû à un mauvais verrouillage."
+    "text"  => "Je ne pense pas que certaines failles de sécurité spectaculaires doivent être glorifiées ou traitées comme étant plus ” spéciales ” qu'un accident aléatoire dû à un mauvais verrouillage."
   ),
   array(
     "theme" => "ignorance",
@@ -28,7 +28,7 @@ $quotes['linus-torvalds'] = array(
   ),
   array(
     "theme" => "epistemology",
-    "text"  => "“Test de non-régression”? Qu'est-ce? Si cela compile, c'est bon, et si cela amorce, c'est parfait."
+    "text"  => "“Test de non-régression” ? Qu'est-ce ? Si cela compile, c'est bon, et si cela amorce, c'est parfait."
   ),
   array(
     "theme" => "religion",
@@ -36,7 +36,7 @@ $quotes['linus-torvalds'] = array(
   ),
   array(
     "theme" => "ideas",
-    "text"  => "Si vous continuez à ne pas apprécier, ce n'est pas grave: c'est la raison pour laquelle je suis le patron. Je sais mieux que vous. "
+    "text"  => "Si vous continuez à ne pas apprécier, ce n'est pas grave : c'est la raison pour laquelle je suis le patron. Je sais mieux que vous. "
   ),
   array(
     "theme" => "brain",
@@ -44,7 +44,7 @@ $quotes['linus-torvalds'] = array(
   ),
   array(
     "theme" => "physics",
-    "text"  => "Seuls les femmelettes sauvegardent sur bande magnétique: les vrais hommes se contentent de télécharger leurs œuvres immortelles vers un site FTP et laissent le reste du monde en maintenir des miroirs. "
+    "text"  => "Seules les femmelettes sauvegardent sur bande magnétique: les vrais hommes se contentent de télécharger leurs œuvres immortelles vers un site FTP et laissent le reste du monde en maintenir des miroirs. "
   ),
   array(
     "theme" => "be",

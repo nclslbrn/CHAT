@@ -40,7 +40,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "will",
-    "text" => "A tous les hommes échoit de se connaître eux-mêmes et d'avoir l'esprit clair."
+    "text" => "À tous les hommes échoit de se connaître eux-mêmes et d'avoir l'esprit clair."
   ),
   array(
     "theme" => "religion",
@@ -52,7 +52,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "cosmology",
-    "text" => "Parmi les choses répandues au hasard, le plus beau: le cosmos. L'harmonie invisible plus belle que la visible. Nature aime se cacher."
+    "text" => "Parmi les choses répandues au hasard, le plus beau : le cosmos. L'harmonie invisible plus belle que la visible. Nature aime se cacher."
   ),
   array(
     "theme" => "ideas",
@@ -64,7 +64,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "isolation",
-    "text" => "Le monde est un et commun, mais lorsqu'ils sombrent dans le sommeil ils se tournent chacun vers le sien propre."
+    "text" => "Le monde est un et commun, mais lorsqu'ils sombrent dans le sommeil, ils se tournent chacun vers le sien propre."
   ),
   array(
     "theme" => "epistemology",
@@ -72,11 +72,11 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "justice",
-    "text" => "Etre raisonnable est la plus grande vertu, et la sagesse est de dire la vérité et d'agir conformément à la nature avec attention."
+    "text" => "Être raisonnable est la plus grande vertu, et la sagesse est de dire la vérité et d'agir conformément à la nature avec attention."
   ),
   array(
     "theme" => "will",
-    "text" => "Il ne serait pas meilleur pour les hommes que tous leurs voeux soient accomplis."
+    "text" => "Il ne serait pas meilleur pour les hommes que tous leurs vœux soient accomplis."
   ),
   array(
     "theme" => "ignorance",
@@ -84,7 +84,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "religion",
-    "text" => "Le comportement humain n'enferme pas les connaissances; le divin si."
+    "text" => "Le comportement humain n'enferme pas les connaissances ; le divin si."
   ),
   array(
     "theme" => "religion",
@@ -112,11 +112,11 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "violence",
-    "text" => "Il est dans les moeurs d'un sot de s'extasier à toute parole."
+    "text" => "Il est dans les mœurs d'un sot de s'extasier à toute parole."
   ),
   array(
     "theme" => "physics",
-    "text" => "Ce qui est taillé en sens contraire s'assemble; de ce qui diffère naît la plus belle harmonie; tout devient par discorde."
+    "text" => "Ce qui est taillé en sens contraire s'assemble ; de ce qui diffère, naît la plus belle harmonie ; tout devient par discorde."
   ),
   array(
     "theme" => "justice",
@@ -128,7 +128,7 @@ $quotes['H&eacute;raclite d\'Eph&egrave;se'] = array(
   ),
   array(
     "theme" => "intelligence",
-    "text" => "Le fait d'apprendre beaucoup n'instruit pas l'intelligence. Autrement il aurait instruit Hésiode et Pythagore, ainsi que Xénophane et Hécatée."
+    "text" => "Le fait d'apprendre beaucoup n'instruit pas l'intelligence. Autrement, il aurait instruit Hésiode et Pythagore, ainsi que Xénophane et Hécatée."
   ),
   array(
     "theme" => "nature",

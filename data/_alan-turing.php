@@ -15,7 +15,7 @@ $quotes['alan-turing'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text" => "Nous ne pouvons voir qu'une une courte distance devant, mais nous pouvons voir beaucoup là qui doit être fait."
+    "text" => "Nous ne pouvons voir qu'une courte distance devant, mais nous pouvons voir beaucoup là qui doit être fait."
   ),
   array(
     "theme" => "religion",
@@ -27,15 +27,15 @@ $quotes['alan-turing'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text" => "Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire."
+    "text" => "Nous ne savons pas où nous allons, mais du moins, il nous reste bien des choses à faire."
   ),
   array(
     "theme" => "violence",
-    "text" => "Savez-vous pourquoi les gens aiment la violence? C'est parce que ça fait du bien. Les humains trouvent la violence profondément satisfaisante. Mais retirez la satisfaction et l'acte devient creux."
+    "text" => "Savez-vous pourquoi les gens aiment la violence ? C'est parce que ça fait du bien. Les humains trouvent la violence profondément satisfaisante. Mais retirez la satisfaction et l'acte devient creux."
   ),
   array(
     "theme" => "be",
-    "text" => "Un jour, les dames vont prendre leurs ordinateurs pour se promener dans le parc et se dire: Mon petit ordinateur a dit une chose aussi drôle ce matin."
+    "text" => "Un jour, les dames vont prendre leurs ordinateurs pour se promener dans le parc et se dire : Mon petit ordinateur a dit une chose aussi drôle ce matin."
   ),
   array(
     "theme" => "intelligence",
@@ -75,7 +75,7 @@ $quotes['alan-turing'] = array(
   ),
   array(
     "theme" => "brain",
-    "text" => "Au lieu d'essayer de produire un programme pour simuler l'esprit adulte, pourquoi ne pas plutôt essayer de produire celui qui simule l'enfant? Si cela était alors soumis à une formation appropriée, on obtiendrait le cerveau adulte."
+    "text" => "Au lieu d'essayer de produire un programme pour simuler l'esprit adulte, pourquoi ne pas plutôt essayer de produire celui qui simule l'enfant ? Si cela était alors soumis à une formation appropriée, on obtiendrait le cerveau adulte."
   )
 );
 

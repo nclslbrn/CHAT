@@ -56,15 +56,15 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text" => "Les combats entre les individus, aussi bien qu’entre les gouvernements et les nations, sont l’invariable résultat de l’incompréhension dans l’interprétation la plus large de ces termes. Les malentendus sont toujours causés par l’incapacité à apprécier le point de vue d’autrui. Et cela est dû à l’ignorance de ceux qui sont concernés, pas seulement dans leur champs propre, mais dans leurs domaines communs. Le danger d’un choc est aggravé par un sens plus ou moins prédominant de combativité, représenté par chaque être humain. Pour résister à cette tendance inhérente à la lutte, la meilleure manière est de dissiper l’ignorance des actes des autres par la propagation systématique de la connaissance générale. Avec cet objectif en vue, le plus important est de faciliter l’échange des pensées et des relations."
+    "text" => "Les combats entre les individus, aussi bien qu’entre les gouvernements et les nations, sont l’invariable résultat de l’incompréhension dans l’interprétation la plus large de ces termes. Les malentendus sont toujours causés par l’incapacité à apprécier le point de vue d’autrui. Et cela est dû à l’ignorance de ceux qui sont concernés, pas seulement dans leur champ propre, mais dans leurs domaines communs. Le danger d’un choc est aggravé par un sens plus ou moins prédominant de combativité, représenté par chaque être humain. Pour résister à cette tendance inhérente à la lutte, la meilleure manière est de dissiper l’ignorance des actes des autres par la propagation systématique de la connaissance générale. Avec cet objectif en vue, le plus important est de faciliter l’échange des pensées et des relations."
   ),
   array(
     "theme" => "be",
-    "text" => "Tout ce qui était grand dans le passé a été ridiculisé, condamné, combattu, supprimé; seulement pour faire émerger ce qu’il y a de plus puissant et de triomphant de cette lutte."
+    "text" => "Tout ce qui était grand dans le passé a été ridiculisé, condamné, combattu, supprimé ; seulement pour faire émerger ce qu’il y a de plus puissant et de triomphant de cette lutte."
   ),
   array(
     "theme" => "epistemology",
-    "text" => "Aujourd’hui les scientifiques ont substitués les mathématiques aux expériences, alors ils errent d’équation en équation, créant éventuellement une structure qui n’a aucun lien avec la réalité."
+    "text" => "Aujourd’hui, les scientifiques ont substitués les mathématiques aux expériences, alors ils errent d’équation en équation, créant éventuellement une structure qui n’a aucun lien avec la réalité."
   ),
   array(
     "theme" => "be",
@@ -80,11 +80,11 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text" => "Nous aspirons à de nouvelles sensations mais nous serons bientôt indifférents à celles-ci. Les merveilles d’hier sont les choses courantes d’aujourd’hui."
+    "text" => "Nous aspirons à de nouvelles sensations, mais nous serons bientôt indifférents à celles-ci. Les merveilles d’hier sont les choses courantes d’aujourd’hui."
   ),
   array(
     "theme" => "intelligence",
-    "text" => "Je suis reconnu pour être l’un des plus travailleurs et peut-être le suis-je, si réfléchir équivaux à travailler, ce pour quoi j’ai dévoué la plupart de mes heures de veille. Mais si travailler est interprété comme une performance définie dans un temps spécifié et accordé à une règlementation stricte, alors je suis peut-être le pire des fainéants."
+    "text" => "Je suis reconnu pour être l’un des plus travailleurs et peut-être le suis-je, si réfléchir équivaut à travailler, ce pour quoi j’ai dévoué la plupart de mes heures de veille. Mais si travailler est interprété comme une performance définie dans un temps spécifié et accordé à une réglementation stricte, alors je suis peut-être le pire des fainéants."
   ),
   array(
     "theme" => "intelligence",
@@ -112,7 +112,7 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "will",
-    "text" => "Je fais partie d’une lumière, et cela est la musique. La musique remplit mes six sens, je la vois, l’entends, la sent, la ressent, la touche et la pense. Penser cela est mon sixième sens. Les particules de lumière sont des notes écrites. Un éclair d’orage peut être une sonate entière. Un millier de boules d’éclairs un concert. Pour ce concert j’ai créé une boule de foudre, qui peut être entendue sur les sommets glacés de l’Himalaya."
+    "text" => "Je fais partie d’une lumière, et cela est la musique. La musique remplit mes six sens, je la vois, l’entends, la sent, la ressent, la touche et la pense. Penser cela est mon sixième sens. Les particules de lumière sont des notes écrites. Un éclair d’orage peut être une sonate entière. Un millier de boules d’éclairs un concert. Pour ce concert, j’ai créé une boule de foudre, qui peut être entendue sur les sommets glacés de l’Himalaya."
   ),
   array(
     "theme" => "cosmology",
@@ -148,19 +148,19 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "be",
-    "text" => "La plupart des personnes sont tellement absorbés dans la contemplation du monde extérieur qu’ils sont totalement inconscients de ce qui se passe en eux-mêmes. La mort prématurée de millions de personnes est principalement liée à cette cause. Même parmi ceux qui exercent leur attention, c’est une erreur commune pour éviter l’imagination et ignorer les dangers réels. Et ce qui est vrai d’un individu s’applique aussi, plus ou moins, à un peuple dans son ensemble."
+    "text" => "La plupart des personnes sont tellement absorbées dans la contemplation du monde extérieur qu’ils sont totalement inconscients de ce qui se passe en eux-mêmes. La mort prématurée de millions de personnes est principalement liée à cette cause. Même parmi ceux qui exercent leur attention, c’est une erreur commune pour éviter l’imagination et ignorer les dangers réels. Et ce qui est vrai d’un individu s’applique aussi, plus ou moins, à un peuple dans son ensemble."
   ),
   array(
     "theme" => "violence",
-    "text" => "Nous avons donc trouvé que les trois solutions possibles du grand problème de l’accroissement de l’énergie humaine ont leur réponse par les trois mots: nourriture, paix, travail. Plus d’une année j’ai pensé et réfléchi, me suis perdu moi-même en spéculations et théories, considérant l’humain comme une masse mue par une force, observant son inexplicable mouvement comme quelque chose de mécanique et, appliquant les simples principes de la mécanique à l’analyse de ces derniers jusqu’à ce que j’arrive à ces solutions, juste pour réaliser ce qu’ils m’ont appris au cours de mon enfance."
+    "text" => "Nous avons donc trouvé que les trois solutions possibles du grand problème de l’accroissement de l’énergie humaine ont leur réponse par les trois mots : nourriture, paix, travail. Plus d’une année j’ai pensé et réfléchi, me suis perdu moi-même en spéculations et théories, considérant l’humain comme une masse mue par une force, observant son inexplicable mouvement comme quelque chose de mécanique et, appliquant les simples principes de la mécanique à l’analyse de ces derniers jusqu’à ce que j’arrive à ces solutions, juste pour réaliser ce qu’ils m’ont appris au cours de mon enfance."
   ),
   array(
     "theme" => "physics",
-    "text" => "La nourriture accroit la masse, la paix diminue la résistance, et le travail accroit la force qui accélère le mouvement humain. Ce sont les trois seules solutions possibles … pour accroitre l’énergie humaine."
+    "text" => "La nourriture accroît la masse, la paix diminue la résistance, et le travail accroît la force qui accélère le mouvement humain. Ce sont les trois seules solutions possibles … pour accroître l’énergie humaine."
   ),
   array(
     "theme" => "ignorance",
-    "text" => "Tout comme j’ai prononcé ces mots inspirants, l’idée m’est venue en un éclair et en un instant la vérité fut révélée. J’ai dessiné avec un bâton dans le sable le schéma que j’ai montré six ans plus tard devant l’institut américain des ingénieurs électriques (American Institute of Electrical Engineers), et mon ami les comprenait parfaitement. Les images que j’ai vues étaient merveilleusement nettes et claires, elles avaient la solidité du métal et de la roche, tellement que je lui ai dit « Vois mon moteur ici, observe moi l’inverser ». Je ne peux décrire mes émotions. Pygmalion voyant sa statue prendre vie n’aurait pu être plus profondément ému. Un millier de secrets de la nature sur lesquels j’aurais pu accidentellement tomber, je les aurais donnés pour celui que j’avais arraché à la nature contre toute attente et au péril de ma vie."
+    "text" => "Tout comme j’ai prononcé ces mots inspirants, l’idée m’est venue en un éclair et en un instant la vérité fut révélée. J’ai dessiné avec un bâton dans le sable le schéma que j’ai montré six ans plus tard devant l’institut américain des ingénieurs électriques (American Institute of Electrical Engineers), et mon ami les comprenait parfaitement. Les images que j’ai vues étaient merveilleusement nettes et claires, elles avaient la solidité du métal et de la roche, tellement que je lui ai dit « Vois mon moteur ici, observez moi l’inverser ». Je ne peux décrire mes émotions. Pygmalion voyant sa statue prendre vie n’aurait pu être plus profondément ému. Un millier de secrets de la nature sur lesquels j’aurais pu accidentellement tomber, je les aurais donnés pour celui que j’avais arraché à la nature contre toute attente et au péril de ma vie."
   ),
   array(
     "theme" => "ignorance",
@@ -172,11 +172,11 @@ $quotes['nicolas-tesla'] = array(
   ),
   array(
     "theme" => "violence",
-    "text" => "Je me suis coupé le doigt, et cela me fait mal: ce doigt est une partie de moi. Je vois un ami souffrir, et cela me fait souffrir aussi: mon ami et moi sommes un. Et maintenant, je vois un ennemi terrassé, un morceau de matière dont, de tous les morceaux de matière dans l’univers, je me soucie moins, et cela me chagrine encore. N’est-ce pas la preuve que chacun de nous n’est qu’une partie d’un tout ?"
+    "text" => "Je me suis coupé le doigt, et cela me fait mal : ce doigt est une partie de moi. Je vois un ami souffrir, et cela me fait souffrir aussi : mon ami et moi sommes un. Et maintenant, je vois un ennemi terrassé, un morceau de matière dont, de tous les morceaux de matière dans l’univers, je me soucie moins, et cela me chagrine encore. N’est-ce pas la preuve que chacun de nous n’est qu’une partie d’un tout ?"
   ),
   array(
     "theme" => "religion",
-    "text" => "Pendant des siècles, cette idée a été proclamée dans les plus répandus des enseignements de sagesse des religions, sans doute pas seulement comme un moyen d’assurer la paix et l’harmonie entre les hommes, mais comme une vérité profondément fondée. Le bouddhiste l’exprime d’une manière, le chrétien d’une autre, mais les deux disent la même chose: Nous sommes tous un."
+    "text" => "Pendant des siècles, cette idée a été proclamée dans les plus répandus des enseignements de sagesse des religions, sans doute pas seulement comme un moyen d’assurer la paix et l’harmonie entre les hommes, mais comme une vérité profondément fondée. Le bouddhiste l’exprime d’une manière, le chrétien d’une autre, mais les deux disent la même chose : Nous sommes tous un."
     ),
   array(
     "theme" => "epistemology",

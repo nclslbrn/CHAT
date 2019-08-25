@@ -16,7 +16,7 @@ $quotes['ada-lovelace'] = array(
   ),
   array(
     "theme" => "ideas",
-    "text"  => "Si vous ne pouvez pas me donner la poésie, ne pouvez vous pas me donner la science poétique ?."
+    "text"  => "Si vous ne pouvez pas me donner la poésie, ne pouvez-vous pas me donner la science poétique ?"
   ),
   array(
     "theme" => "power",
@@ -28,7 +28,7 @@ $quotes['ada-lovelace'] = array(
   ),
   array(
     "theme" => "be",
-    "text"  => "Je ne suis jamais vraiment satisfaite quand je comprend quelque chose; Parce que, je le comprend bien, ma compréhension ne peut être qu'une fraction infinitésimale de tout ce que je veux comprendre sur les nombreux liens et relations qui me sont posés, comment la matière en question a d'abord été pensée ou arrivée."
+    "text"  => "Je ne suis jamais vraiment satisfaite quand je comprends quelque chose ; Parce que, je le comprends bien, ma compréhension ne peut être qu'une fraction infinitésimale de tout ce que je veux comprendre sur les nombreux liens et relations qui me sont posés, comment la matière en question a d'abord été pensée ou arrivée."
   ),
   array(
     "theme" => "power",
@@ -36,7 +36,7 @@ $quotes['ada-lovelace'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text"  => "Beaucoup de personnes qui ne connaissent pas les mathématiques pensent que, parce que le moteur analytique de Babbage doit donner des résultats en notation numérique, la nature de ses processus doit donc être arithmétique et numérique plutôt que algébrique et analytique. C'est une erreur. Le moteur peut organiser et combiner ses quantités numériques exactement comme s'il s'agissait de lettres ou d'autres symboles généraux; Et en fait, il pourrait mettre en évidence ses résultats en notation algébrique, si des dispositions étaient prises en conséquence."
+    "text"  => "Beaucoup de personnes qui ne connaissent pas les mathématiques pensent que, parce que le moteur analytique de Babbage doit donner des résultats en notation numérique, la nature de ses processus doit donc être arithmétique et numérique plutôt qu'algébrique et analytique. C'est une erreur. Le moteur peut organiser et combiner ses quantités numériques exactement comme s'il s'agissait de lettres ou d'autres symboles généraux ; Et en fait, il pourrait mettre en évidence ses résultats en notation algébrique, si des dispositions étaient prises en conséquence."
   )
 );
 ?>

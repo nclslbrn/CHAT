@@ -28,7 +28,7 @@ $quotes['aaron-swartz'] = array(
   ),
   array(
     "theme" => "justice",
-    "text"  => "Nombreux sont ceux qui disent  : «  Je suis d’accord mais que peut-on y faire  ? Les entreprises possèdent les droits de reproduction de ces documents, elles gagnent énormément d’argent en faisant payer l’accès, et c’est parfaitement légal, il n’y a rien que l’on puisse faire pour les en empêcher.  » Mais si, on peut faire quelque chose, ce qu’on est déjà en train de faire  : riposter."
+    "text"  => "Nombreux sont ceux qui disent  : «  Je suis d’accord, mais que peut-on y faire  ? Les entreprises possèdent les droits de reproduction de ces documents, elles gagnent énormément d’argent en faisant payer l’accès, et c’est parfaitement légal, il n’y a rien que l’on puisse faire pour les en empêcher.  » Mais si, on peut faire quelque chose, ce qu’on est déjà en train de faire  : riposter."
   ),
   array(
     "theme" => "ignorance",
@@ -36,7 +36,7 @@ $quotes['aaron-swartz'] = array(
   ),
   array(
     "theme" => "intelligence",
-    "text"  => "Sérieusement, qui se soucie vraiment de la longueur du fleuve Nil ou qui a été le premier à découvrir du fromage? Comment est-ce que la mémorisation est toujours utile? Au lieu de cela, nous devons donner aux enfants des projets qui leur permettent d'exercer leur esprit et de découvrir des choses pour eux-mêmes."
+    "text"  => "Sérieusement, qui se soucie vraiment de la longueur du fleuve Nil ou qui a été le premier à découvrir du fromage ? Comment est-ce que la mémorisation est toujours utile ? Au lieu de cela, nous devons donner aux enfants des projets qui leur permettent d'exercer leur esprit et de découvrir des choses pour eux-mêmes."
   ),
   array(
     "theme" => "violence",
@@ -48,7 +48,7 @@ $quotes['aaron-swartz'] = array(
   ),
   array(
     "theme" => "be",
-    "text"  => "La plupart des gens, semble-t-il, déforment la vérité pour se faire paraître plus impressionnants. Je crois que je déforme la vérité pour me aparaître pire que ce que je suis."
+    "text"  => "La plupart des gens, semble-t-il, déforment la vérité pour se faire paraître plus impressionnants. Je crois que je déforme la vérité pour aparaître pire que ce que je suis."
   ),
   array(
     "theme" => "religion",
@@ -56,7 +56,7 @@ $quotes['aaron-swartz'] = array(
   ),
   array(
     "theme" => "will",
-    "text"  => "Le mouvement Open Access a combattu avec vaillance pour s'assurer que les scientifiques ne signent pas leurs droits d'auteur mais s'assurent que leurs travaux sont publiés sur Internet, dans des conditions qui permettent à quiconque d'y accéder."
+    "text"  => "Le mouvement Open Access a combattu avec vaillance pour s'assurer que les scientifiques ne signent pas leurs droits d'auteur, mais s'assurent que leurs travaux sont publiés sur Internet, dans des conditions qui permettent à quiconque d'y accéder."
   ),
   array(
     "theme" => "ideas",
@@ -72,7 +72,7 @@ $quotes['aaron-swartz'] = array(
   ),
   array(
     "theme" => "liberty",
-    "text"  => "Avec la mort de Ben Laden, il est finalement temps pour le Congrès de ramener la norme juridique d'avant le 9/11, avant de décider qu'il était bon de jeter nos libertés civiles si les «méchants» étaient assez effrayants."
+    "text"  => "Avec la mort de Ben Laden, il est finalement temps pour le Congrès de ramener la norme juridique d'avant le 9/11, avant de décider qu'il était bon de jeter nos libertés civiles si les « méchants » étaient assez effrayants."
   ),
   array(
     "theme" => "be",

@@ -15,7 +15,7 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "ignorance",
-    "text"  => "Souvent les gens prennent leurs propres lacunes pour celles de la société qui les entoure, et cherchent à réformer ladite société parce qu'ils sont incapables de se réformer eux-mêmes."
+    "text"  => "Souvent, les gens prennent leurs propres lacunes pour celles de la société qui les entoure, et cherchent à réformer ladite société parce qu'ils sont incapables de se réformer eux-mêmes."
   ),
   array(
     "theme" => "ideas",
@@ -39,11 +39,11 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "ideas",
-    "text"  => "On pratique le culte du passé. On stagne !."
+    "text"  => "On pratique le culte du passé. On stagne !"
   ),
   array(
     "theme" =>  "epistemology",
-    "text"  => "La connaissance scientifique possède en quelque sorte des propriétés fractales: nous aurons beau accroître notre savoir, le reste -- si infime soit-il -- sera toujours aussi infiniment complexe que l'ensemble de départ."
+    "text"  => "La connaissance scientifique possède en quelque sorte des propriétés fractales : nous aurons beau accroître notre savoir, le reste - si infime soit-il - sera toujours aussi infiniment complexe que l'ensemble de départs."
   ),
   array(
     "theme" => "epistemology",
@@ -51,11 +51,11 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "epistemology",
-    "text"  => "L’aspect le plus triste de notre vie aujourd’hui est que la science acquière les connaissances plus vite que la société n’acquière la sagesse."
+    "text"  => "L’aspect le plus triste de notre vie aujourd’hui est que la science acquiert les connaissances plus vite que la société n’acquière la sagesse."
   ),
   array(
     "theme" => "violence",
-    "text"  => "Comment peut-tu faire mal à quelqu'un avec un livre? D'accord, si tu lui tapes sur la tête avec. Mais pas autrement. Les idées ne peuvent pas faire de mal - même les idées fausses, même les idées idiotes et haineuses. Ce sont les gens qui font le mal. Ils s'emparent quelquefois de certaines idées, et s'en servent comme d'un justificatif pour faire des choses invraisemblables et atroces. L'histoire humaine en est pleine d'exemples. Mais les idées elles-mêmes ne sont que des idées. On ne doit jamais les étouffer; il faut les exprimer, les étudier, les tester, les rejeter si nécessaire, mais toujours au grand jour."
+    "text"  => "Comment peux-tu faire mal à quelqu'un avec un livre ? D'accord, si tu lui tapes sur la tête avec. Mais pas autrement. Les idées ne peuvent pas faire de mal - même les idées fausses, même les idées idiotes et haineuses. Ce sont les gens qui font le mal. Ils s'emparent quelquefois de certaines idées, et s'en servent comme d'un justificatif pour faire des choses invraisemblables et atroces. L'histoire humaine en est pleine d'exemples. Mais les idées elles-mêmes ne sont que des idées. On ne doit jamais les étouffer ; il faut les exprimer, les étudier, les tester, les rejeter si nécessaire, mais toujours au grand jour."
   ),
   array(
     "theme" => "ignorance",
@@ -79,7 +79,7 @@ $quotes['isaac-asimov'] = array(
   ),
   array(
     "theme" => "ideas",
-    "text"  => "Si je vous comprends bien, nous sommes sur la bonne voie: il est urgent d’attendre."
+    "text"  => "Si je vous comprends bien, nous sommes sur la bonne voie : il est urgent d’attendre."
   ),
   array(
     "theme" => "ideas",

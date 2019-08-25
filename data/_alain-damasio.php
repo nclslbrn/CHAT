@@ -11,7 +11,7 @@ Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LIC
  $quotes['alain-damasio'] =  array(
   array(
     "theme" => "power",
-    "text"  => "Le pouvoir n'est pas une substance ou un fluide magique que le Président, qu'une classe ou un appareil d’État posséderait en propre comme une chose. Personne ne peut vraiment dire ce qu'est le pouvoir en démocratie car le pouvoir est essentiellement... multiple... diffus, il s'exerce avant de se posséder... Mais il ne s'exerce que dans des rapports complexes et entrelacés, au sein d'un écheveau de lignes qui se coupent ou se nouent étroitement: médias, religions, multiplanétaires... syndicats, groupe de pression... peuple... président même... Si vous cherchez LE Pouvoir, vous ne ne le trouverez jamais, parce qu'il est partout."
+    "text"  => "Le pouvoir n'est pas une substance ou un fluide magique que le Président, qu'une classe ou un appareil d’État posséderait en propre comme une chose. Personne ne peut vraiment dire ce qu'est le pouvoir en démocratie car le pouvoir est essentiellement... multiple... diffus, il s'exerce avant de se posséder... Mais il ne s'exerce que dans des rapports complexes et entrelacés, au sein d'un écheveau de lignes qui se coupent ou se nouent étroitement : médias, religions, multiplanétaires... syndicats, groupe de pression... peuple... président même... Si vous cherchez LE Pouvoir, vous ne le trouverez jamais, parce qu'il est partout."
   ),
   array(
     "theme" => "will",
@@ -32,11 +32,11 @@ Copyright (c) 2017 Nicolas Lebrun - OSI/MIT license (https://CHAT.artemg.com/LIC
   array(
     "theme" => "power",
     "text"  => "Plus un pouvoir se veut efficace, moins il se manifeste comme pouvoir. Non seulement il a renoncé depuis un siècle aux contraintes physiques, mais il évite désormais toute espèce d'injonction, d'ordre impératif ou d'interdiction formelle .
-Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intangible, l'invisible et l'interstitiel ."
+Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intangible, l'invisible et l'interstitiel."
   ),
   array(
     "theme" => "be",
-    "text"  => "À mes yeux, l'art est une réponse étrange et puissante à la question: qu'est-ce qu'être en vie?"
+    "text"  => "À mes yeux, l'art est une réponse étrange et puissante à la question : qu'est-ce qu'être en vie ?"
   ),
   array(
     "theme" => "will",
@@ -44,11 +44,11 @@ Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intang
   ),
   array(
     "theme" => "liberty",
-    "text"  => "C'est un enjeu majeur pour nous: comment échapper à un cadre où tout acte laisse une trace sur une carte ? Où des banques de données, sans cesse, notent et stockent nos voix, nos pas, nos choix ? Renverser ce système ne servirait à rien: la majorité muette consent à sa sécurisation. Plus on l'isole, plus elle réclame cette enveloppe de technologies douces qui s'occupe si bien d'elle. Ma bague, mon loft, les softs. Privatiser. Médier. Séréniser ! Alleluia !"
+    "text"  => "C'est un enjeu majeur pour nous : comment échapper à un cadre où tout acte laisse une trace sur une carte ? Où des banques de données, sans cesse, notent et stockent nos voix, nos pas, nos choix ? Renverser ce système ne servirait à rien : la majorité muette consent à sa sécurisation. Plus on l'isole, plus elle réclame cette enveloppe de technologies douces qui s'occupe si bien d'elle. Ma bague, mon loft, les softs. Privatiser. Médier. Séréniser ! Alleluia !"
   ),
   array(
     "theme" => "physics",
-    "text"  => "D'une certaine façon, être vivant ne s'atteint que par ce triple combat: contre les forces de gravité en nous - la paresse, la fatigue, la quête du repos ; contre l'instinct de répétition - le déjà-fait, la connu, le sécurisant ; et enfin contre les séductions du continu - tous les développements durables, le réformisme ou ce goût très fréole de la variation plaisante, du pianotement des écarts autour d'une mélodie amusante."
+    "text"  => "D'une certaine façon, être vivant ne s'atteint que par ce triple combat : contre les forces de gravité en nous - la paresse, la fatigue, la quête du repos ; contre l'instinct de répétition - le déjà-fait, le connu, le sécurisant ; et enfin contre les séductions du continu - tous les développements durables, le réformisme ou ce goût très fréole de la variation plaisante, du pianotement des écarts autour d'une mélodie amusante."
   ),
   array(
     "theme" => "ideas",
@@ -56,7 +56,7 @@ Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intang
   ),
   array(
     "theme" => "power",
-    "text"  => "Le GPS nous propose un pouvoir, celui de nous orienter dans l’espace pour aller d’un point A à un point B. Est-ce que ce pouvoir ne me retire pas une forme de puissance personnelle ? On a envie de se laisser happer par cette technologie mais on sent bien que ça siphonne une partie de notre puissance."
+    "text"  => "Le GPS nous propose un pouvoir, celui de nous orienter dans l’espace pour aller d’un point A à un point B. Est-ce que ce pouvoir ne me retire pas une forme de puissance personnelle ? On a envie de se laisser happer par cette technologie, mais on sent bien que ça siphonne une partie de notre puissance."
   ),
   array(
     "theme" => "power",
@@ -88,15 +88,15 @@ Les pouvoirs modernes, je vous l'ai assez répété, se déploient dans l'intang
   ),
   array(
     "theme" => "will",
-    "text"  => "Croyez vous qu'un marginal puisse se satisfaire d'une marge?."
+    "text"  => "Croyez-vous qu'un marginal puisse se satisfaire d'une marge?."
   ),
   array(
     "theme" => "will",
-    "text"  => "En Occident, voter est consentir à la dépossession politique. Rien d'autre, désormais. Le technocapitalisme seul nous dirige. L'Etat n'est plus qu'un cabinet d'ingénierie sociale auquel on sous-traite la variable humaine des équations du profit. L'impuissance s'exaspère, l'explosion révolutionnaire serait logique: pourquoi ça tient? par quel miracle? J'ose cette hypothèse brute: ça tient parce que le pouvoir, sous sa forme simple et immédiate, donc concrète et convaincante, tient maintenant au creux de la main. Tout est là, à portée de clavier, de tap-tap, de clic. Tout répond en temps réel, au doigt et à l'œil, d'un effleurement sensuel. Pourquoi chercher le pouvoir dans un réel épais et complexe quand on l'exerce déjà en monarque sur une réalité manipulable?"
+    "text"  => "En Occident, voter c'est consentir à la dépossession politique. Rien d'autre, désormais. Le technocapitalisme seul nous dirige. L'Etat n'est plus qu'un cabinet d'ingénierie sociale auquel on sous-traite la variable humaine des équations du profit. L'impuissance s'exaspère, l'explosion révolutionnaire serait logique : pourquoi ça tient ? Par quel miracle ? J'ose cette hypothèse brute : ça tient parce que le pouvoir, sous sa forme simple et immédiate, donc concrète et convaincante, tient maintenant au creux de la main. Tout est là, à portée de clavier, de tap-tap, de clic. Tout répond en temps réel, au doigt et à l'œil, d'un effleurement sensuel. Pourquoi chercher le pouvoir dans un réel épais et complexe quand on l'exerce déjà en monarque sur une réalité manipulable ?"
   ),
   array(
     "theme" => "cosmology",
-    "text"  => "A l'origine fut la vitesse, le pur mouvement furtif, le “vent-foudre”. Puis le cosmos décéléra, prit consistance et forme, jusqu'aux lenteurs habitables, jusqu'au vivant, jusqu'à vous. Bienvenue à toi, lent homme lié, poussif tresseur des vitesses."
+    "text"  => "À l'origine fut la vitesse, le pur mouvement furtif, le “vent-foudre”. Puis le cosmos décéléra, prit consistance et forme, jusqu'aux lenteurs habitables, jusqu'au vivant, jusqu'à vous. Bienvenue à toi, lent homme lié, poussif tresseur des vitesses."
   )
  );
 

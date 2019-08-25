@@ -22,7 +22,6 @@ include_once('_alan-turing.php');
 
 if( !empty( $_GET['chat']) ) {
 
-
   $op = $_GET['chat'];
 
   switch( $op ) {
@@ -115,11 +114,40 @@ if( !empty( $_GET['chat']) ) {
       echo 'TOTAL: '. $total_quotes;
       break;
 
+    case 'correction':
+      header("Content-Type: text/html");
+      $themes = get_themes( $quotes );
+      $authors = array();
+      
+      foreach( $themes as  $theme) {
+        foreach( $quotes as $author => $quotes_by_an_author  ) {
+
+          foreach ($quotes_by_an_author as $quote_id => $quote) {
+
+            $authors[$author][$quote_id] = $quote['text']; 
+            
+          }
+        }
+      }
+     /* echo '<pre>';
+      var_dump( $authors );
+      echo '</pre>';
+      */
+      foreach ($authors as $author => $quote) {
+        echo '<h3>'.$author.'</h3><ul>';
+          
+        foreach ($quote as $id => $text) {
+          echo '<li>' . $text . '</li>';
+        }  
+        echo '</ul>';
+      }
+      break;
+
     default:
-      header('Location: http://memories.artemg.com/');
+      header('Location: https://chat.artemg.com/');
   }
 } else {
-  header('Location: http://memories.artemg.com/');
+  header('Location: https://chat.artemg.com/');
 }
 
 ?>
