@@ -19,7 +19,7 @@ NotShowIn=GNOME;KDE;XFCE;
 
 Finally add a cron task 'sudo crontab -e' and type 
 ```
-00 18 * * * root shutdown -h now
+00 18 * * * shutdown -h now
 
 ```
 
