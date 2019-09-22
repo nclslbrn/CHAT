@@ -13,3 +13,16 @@ NoDisplay=false
 Exec=sh /var/www/html/rasberry_pi_4/launch_firefox_ESR.sh
 NotShowIn=GNOME;KDE;XFCE;
 ```
+
+
+# Auto shutown 
+
+Finally add 
+```
+00 18 * * * root shutdown -h now
+
+```
+
+to /etc/crontab to make Raspbian shutdown automatically everyday at 6PM (change time according to your will).
+
+[more info on crontab](https://askubuntu.com/questions/567955/automatic-shutdown-at-specified-times/#answer-567964)
