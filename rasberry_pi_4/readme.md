@@ -17,12 +17,12 @@ NotShowIn=GNOME;KDE;XFCE;
 
 # Auto shutown 
 
-Finally add 
+Finally add a cron task 'sudo crontab -e' and type 
 ```
 00 18 * * * root shutdown -h now
 
 ```
 
-to /etc/crontab to make Raspbian shutdown automatically everyday at 6PM (change time according to your will).
+to make Raspbian shutdown automatically everyday at 6PM (change time according to your will).
 
 [more info on crontab](https://askubuntu.com/questions/567955/automatic-shutdown-at-specified-times/#answer-567964)
